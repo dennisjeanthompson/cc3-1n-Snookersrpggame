@@ -7,6 +7,63 @@
         mc:Ignorable="d"
         Title="The Chronicles of Valoria" Height="750" Width="1020">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="217"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Background="Aquamarine" Grid.ColumnSpan="3"/>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Player Information" Background="BurlyWood"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Player PlayerImage" Background="DeepSkyBlue"/>
+        </Grid>
         
+        
+        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quests" Background="Fuchsia"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game Message" Background="Gold"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Combat or Item" Background="CornflowerBlue"/>
+        <Grid Grid.Row="2" Grid.Column="1">
+        <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+          
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0"  Grid.Column="0" Content="Item Information" Background="LightSteelBlue"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Background="DarkKhaki"/>
+
+        </Grid>
+        <Label Grid.Row="1" Grid.Column="2" Content="Location and Enemy" Background="IndianRed"/>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Location Information" Background="DarkSlateBlue"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Information" Background="SeaGreen"/>
+        </Grid>
+        <Label Grid.Row="2" Grid.Column="2" Content="Navigation Buttons" Background="LawnGreen"/>
+
     </Grid>
 </Window>
