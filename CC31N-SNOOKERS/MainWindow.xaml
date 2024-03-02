@@ -27,7 +27,7 @@
         <Border BorderBrush="Crimson" BorderThickness="3" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
         <!--<Image Source="" Grid.Row="0" Grid.Column="0" />-->
         <!-- End of Menu -->
-      
+      <!-- Enter-->
       <!--PLayer Information-->
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
