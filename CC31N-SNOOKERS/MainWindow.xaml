@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CC31N_SNOOKERS"
         mc:Ignorable="d"
+        FontFamily="Algerian"
         Title="The Chronicles of Valoria" Height="750" Width="1020">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoleanToVisibility"/>
@@ -22,9 +23,9 @@
         </Grid.ColumnDefinitions>
       
 <!--  Menu page-->
-        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3" FontSize="22"/>
+        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3" FontSize="30" FontFamily="Jokerman"  Foreground="DarkBlue"/>
         <Border BorderBrush="Crimson" BorderThickness="1" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
-        <Image Source="/Engine;component/Images/Locations/BenuFarmField.jpg" Grid.Row="0" Grid.Column="0"/>
+        <!--<Image Source="" Grid.Row="0" Grid.Column="0" />-->
         <!-- End of Menu -->
       
       <!--PLayer Information-->
@@ -39,7 +40,7 @@
 <!--End of player information page-->
           
           <!--rows of Player Information-->
-            <Label Grid.Row="0" Grid.Column="0"  Background="BurlyWood"  />
+            <Label Grid.Row="0" Grid.Column="0"  Background="LightBlue"  />
             <Grid  Grid.Row="0" Grid.Column="0">
                 <Grid.RowDefinitions >
                     <RowDefinition Height ="Auto"/>
@@ -57,18 +58,18 @@
                   
                   <!--content of Player Information-->
                 </Grid.ColumnDefinitions>
-                <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="0"/>
-                <Label Grid.Row="0" Grid.Column="0" Content="Name:"  FontSize="15" Foreground="DarkRed"/>
+                <Border BorderBrush="RoyalBlue" BorderThickness="1" Grid.Row="0" Grid.Column="0"/>
+                <Label Grid.Row="0" Grid.Column="0" Content="Name:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"  FontSize="15"/>
-                <Label Grid.Row="1" Grid.Column="0" Content="Class:"  FontSize="15"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="Class:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"  FontSize="15"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="Hit Points:"  FontSize="15"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="Hit Points:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"   FontSize="15"/>
-                <Label Grid.Row="3" Grid.Column="0" Content="Gold:"  FontSize="15"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="Gold:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"  FontSize="15"/>
-                <Label Grid.Row="4" Grid.Column="0" Content="XP:"  FontSize="15"/>
+                <Label Grid.Row="4" Grid.Column="0" Content="XP:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"  FontSize="15"/>
-                <Label Grid.Row="5" Grid.Column="0" Content="Level:"  FontSize="15"/>
+                <Label Grid.Row="5" Grid.Column="0" Content="Level:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"  FontSize="15"/>
             
        
