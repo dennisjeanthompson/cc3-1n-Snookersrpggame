@@ -1,7 +1,0 @@
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\bin\Debug\Engine.dll
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\bin\Debug\Engine.pdb
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\obj\Debug\Engine.dll
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\obj\Debug\Engine.pdb
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\obj\Debug\Engine.csprojAssemblyReference.cache
-C:\Users\JEP\Documents\4534r43r43\SOSCSRPG\Engine\obj\Debug\Engine.g.resources
