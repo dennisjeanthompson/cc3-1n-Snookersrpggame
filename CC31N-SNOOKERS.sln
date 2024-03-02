@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CC31N-SNOOKERS", "CC31N-SNOOKERS\CC31N-SNOOKERS.csproj", "{D95E597E-D54D-4F5B-93B2-755C1EA5D75F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CC31N-SNOOKERS", "CC31N-SNOOKERS\CC31N-SNOOKERS.csproj", "{D95E597E-D54D-4F5B-93B2-755C1EA5D75F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Engine", "Engine\Engine.csproj", "{71ABE174-1A5E-474D-95A8-31BFC6065CF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37CE115E-E307-4E2F-9A1F-5901008A377E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{D95E597E-D54D-4F5B-93B2-755C1EA5D75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95E597E-D54D-4F5B-93B2-755C1EA5D75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D95E597E-D54D-4F5B-93B2-755C1EA5D75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71ABE174-1A5E-474D-95A8-31BFC6065CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71ABE174-1A5E-474D-95A8-31BFC6065CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71ABE174-1A5E-474D-95A8-31BFC6065CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71ABE174-1A5E-474D-95A8-31BFC6065CF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

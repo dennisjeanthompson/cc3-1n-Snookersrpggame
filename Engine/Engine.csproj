@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWpf>true</UseWpf>
+ 
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\Locations\Home.jpg\**" />
+    <EmbeddedResource Remove="Images\Locations\Home.jpg\**" />
+    <None Remove="Images\Locations\Home.jpg\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Locations\AlmaMarketSquare.jpg" />
+    <None Remove="Images\Locations\BenuFarmField.jpg" />
+    <None Remove="Images\Locations\BenuFarmHouse.jpg" />
+    <None Remove="Images\Locations\DawnWoodForest.png" />
+    <None Remove="Images\Locations\EldoriaTownSquare.png" />
+    <None Remove="Images\Locations\GrassyLand.png" />
+    <None Remove="Images\Locations\Home.jpg" />
+    <None Remove="Images\Locations\LynxCabin.png" />
+    <None Remove="Images\Locations\TownGate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Locations\AlmaMarketSquare.jpg" />
+    <Resource Include="Images\Locations\BenuFarmField.jpg" />
+    <Resource Include="Images\Locations\BenuFarmHouse.jpg" />
+    <Resource Include="Images\Locations\DawnWoodForest.png" />
+    <Resource Include="Images\Locations\EldoriaTownSquare.png" />
+    <Resource Include="Images\Locations\GrassyLand.png" />
+    <Resource Include="Images\Locations\Home.jpg" />
+    <Resource Include="Images\Locations\LynxCabin.png" />
+    <Resource Include="Images\Locations\TownGate.png" />
+  </ItemGroup>
+
+</Project>
