@@ -23,8 +23,8 @@
         </Grid.ColumnDefinitions>
       
 <!--  Menu page-->
-        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3" FontSize="30" FontFamily="Jokerman"  Foreground="DarkBlue"/>
-        <Border BorderBrush="Crimson" BorderThickness="1" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
+        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3" FontSize="30" FontFamily="Jokerman"  Foreground="DarkBlue" Background="LightBlue"/>
+        <Border BorderBrush="Crimson" BorderThickness="3" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
         <!--<Image Source="" Grid.Row="0" Grid.Column="0" />-->
         <!-- End of Menu -->
       
@@ -40,7 +40,7 @@
 <!--End of player information page-->
           
           <!--rows of Player Information-->
-            <Label Grid.Row="0" Grid.Column="0"  Background="LightBlue"  />
+            <Label Grid.Row="0" Grid.Column="0"  Background="DarkKhaki"  BorderBrush="ForestGreen" BorderThickness="4"/>
             <Grid  Grid.Row="0" Grid.Column="0">
                 <Grid.RowDefinitions >
                     <RowDefinition Height ="Auto"/>
@@ -60,17 +60,17 @@
                 </Grid.ColumnDefinitions>
                 <Border BorderBrush="RoyalBlue" BorderThickness="1" Grid.Row="0" Grid.Column="0"/>
                 <Label Grid.Row="0" Grid.Column="0" Content="Name:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
-                <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"  FontSize="15"/>
+                <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"  FontSize="15" Foreground="DarkGoldenrod"/>
                 <Label Grid.Row="1" Grid.Column="0" Content="Class:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
-                <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"  FontSize="15"/>
+                <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"  FontSize="15" Foreground="DarkGoldenrod"/>
                 <Label Grid.Row="2" Grid.Column="0" Content="Hit Points:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
-                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"   FontSize="15"/>
+                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"   FontSize="15" Foreground="DarkGoldenrod"/>
                 <Label Grid.Row="3" Grid.Column="0" Content="Gold:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
-                <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"  FontSize="15"/>
+                <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"  FontSize="15" Foreground="DarkGoldenrod"/>
                 <Label Grid.Row="4" Grid.Column="0" Content="XP:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
-                <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"  FontSize="15"/>
+                <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"  FontSize="15" Foreground="DarkGoldenrod"/>
                 <Label Grid.Row="5" Grid.Column="0" Content="Level:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
-                <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"  FontSize="15"/>
+                <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"  FontSize="15" Foreground="DarkGoldenrod"/>
             
        
             <!--End content of Player Information-->
@@ -78,16 +78,16 @@
             
             <!--Player Image-->
             </Grid>
-            <Label Grid.Row="2" Grid.Column="0" Content="Player Image" Background="DeepSkyBlue"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Player Image" Background="DeepSkyBlue" BorderBrush="ForestGreen" BorderThickness="4"/>
         <!--END ofplAYER Image-->
           
           <!--Inventory and Quest-->
         </Grid>
-        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quests" Background="Fuchsia"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quests" Background="Fuchsia" BorderBrush="ForestGreen" BorderThickness="4"/>
            <!--End of inventory and quest-->
       
       <!--Game MESsage -->
-        <Label Grid.Row="1" Grid.Column="2" Content="Game Message" Background="Gold"/>
+        <Label Grid.Row="1" Grid.Column="2" Content="Game Message" Background="Gold" BorderBrush="ForestGreen" BorderThickness="4"/>
       <!--END of game message-->
       
       <!--Item info and item button use-->
@@ -102,13 +102,13 @@
                 <ColumnDefinition Width="*"/>
 
             </Grid.ColumnDefinitions>
-            <Label Grid.Row="0"  Grid.Column="0" Content="Item Information" Background="LightSteelBlue"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Background="DarkKhaki"/>
+            <Label Grid.Row="0"  Grid.Column="0" Content="Item Information" Background="LightSteelBlue" BorderBrush="ForestGreen" BorderThickness="4"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Background="DarkKhaki" BorderBrush="ForestGreen" BorderThickness="4"/>
           <!--End of item and buttons use-->
           
 <!--Location image-->
         </Grid>
-        <Label Grid.Row="1" Grid.Column="1"  Background="IndianRed"/>
+        <Label Grid.Row="1" Grid.Column="1"  Background="IndianRed" BorderBrush="ForestGreen" BorderThickness="4"/>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -144,16 +144,16 @@
             <!--End of location image-->
        
 <!--Enemy location iamge-->
-           
-       
-            <Label Grid.Row="2" Grid.Column="1" Content="Enemy Information" Background="SeaGreen"/>
+
+
+            <Label Grid.Row="2" Grid.Column="1" Content="Enemy Information" Background="Red" BorderBrush="ForestGreen" BorderThickness="4"/>
            
 
             <!--End of ENEMY image-->
           
           <!--Navigation button-->
         </Grid>
-        <Label Grid.Row="2" Grid.Column="2"  Background="LawnGreen"/>
+        <Label Grid.Row="2" Grid.Column="2"  Background="DarkTurquoise" BorderBrush="ForestGreen" BorderThickness="4"/>
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -166,13 +166,13 @@
                 <ColumnDefinition Width=" *"/>
             </Grid.ColumnDefinitions>
             <Button Grid.Row="1" Grid.Column="0" Height="25" Width="65" Margin="10" Visibility="{Binding HasLocationToWest,Converter={StaticResource BoleanToVisibility}}" Click="OnClick_MoveWest"
-                    Content="West"   />
+                    Content="West"  FontWeight="UltraBold" Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DodgerBlue"/>
             <Button Grid.Row="0" Grid.Column="1"   Height="25" Width="65" Margin="10" Visibility="{Binding HasLocationToNorth,Converter={StaticResource BoleanToVisibility}}" Click="OnClick_MoveNorth"
-                 Content="North" />
+                 Content="North"  FontWeight="UltraBold" Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DodgerBlue" />
             <Button Grid.Row="1" Grid.Column="2" Height="25" Width="65" Margin="10" Visibility="{Binding HasLocationToEast,Converter={StaticResource BoleanToVisibility}}" Click="OnClick_MoveEast"
-                  Content="East" />
+                  Content="East"  FontWeight="UltraBold" Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DodgerBlue"/>
             <Button Grid.Row="2" Grid.Column="1" Height="25" Width="65" Margin="10" Visibility="{Binding HasLocationToSouth,Converter={StaticResource BoleanToVisibility}}" Click="OnClick_MoveSouth"
-                      Content="South"/>
+                      Content="South" FontWeight="UltraBold" Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DodgerBlue"/>
 
         </Grid>
 <!--End of Navigation button-->
