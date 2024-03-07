@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Engine.Models;
 namespace Engine.Factories
 {
-   internal class WorldFactory
+internal static  class WorldFactory
     {
-        public World CreateWorld()
+        public  static World  CreateWorld()
         {
             World newWorld = new World();
             newWorld.AddLocation(0, -1, "Player's Home", "This is the place where you currently live", "/Engine;component/Images/Locations/Home.jpg");
