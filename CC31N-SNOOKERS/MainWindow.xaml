@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CC31N_SNOOKERS"
         mc:Ignorable="d"
         FontFamily="Algerian"
-        Title="The Chronicles of Valoria" Height="600" Width="1020">
+        Title="The Chronicles of Valoria" Height="750" Width="1020">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoleanToVisibility"/>
     </Window.Resources>
@@ -45,8 +45,8 @@
 <!--End of player information page-->
           
           <!--rows of Player Information-->
-            <Label Grid.Row="0" Grid.Column="0"  Background="DarkKhaki"  BorderBrush="DarkRed" BorderThickness="4"/>
-            <Image Stretch="Fill" Source="/Background/skulz.jpg"  Opacity="0.5"/>
+            <Label Grid.Row="0" Grid.Column="0"  Background="DarkKhaki"  BorderBrush="DarkRed" BorderThickness="4"  />
+            <Image Stretch="Fill" Source="/Background/skulz.jpg"  Opacity="0.5" />
             <Grid  Grid.Row="0" Grid.Column="0"  >
                 <Grid.RowDefinitions >
                     <RowDefinition Height ="Auto"  />
@@ -84,9 +84,11 @@
             
             <!--Player Image-->
             </Grid>
-            <Label Grid.Row="2" Grid.Column="0" Content="Player Image" BorderBrush="DarkRed" BorderThickness="4"   Canvas.ZIndex="1" FontSize="21" Foreground="Red"/>
+            <Label Grid.Row="2" Grid.Column="0"  BorderBrush="DarkRed" BorderThickness="4"  Canvas.ZIndex="1"   FontSize="21" Foreground="Red"/>
             <Image Source="/Background/Bluu.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"/>
-            <Image Source="/Background/snierr.png" Grid.Row="2" Grid.Column="0" Stretch="Fill" Opacity=".2"/>
+            <Image Source="/Background/snierr.png" Grid.Row="2" Grid.Column="0" Stretch="Fill" />
+            <Image Source="/Engine;component/Images/PlayerImage/Barbie.jpg " Grid.Row="2" Grid.Column="0" Stretch="Fill"  />
+            <Image Source="/Background/Barbie.jpg" Grid.Row="1" Grid.Column="0" Stretch="Fill"    />
             <!--END ofplAYER Image-->
           
           <!--Inventory and Quest-->

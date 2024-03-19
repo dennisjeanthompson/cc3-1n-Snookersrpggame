@@ -25,6 +25,7 @@
     <None Remove="Images\Locations\Home.jpg" />
     <None Remove="Images\Locations\LynxCabin.png" />
     <None Remove="Images\Locations\TownGate.png" />
+    <None Remove="Images\PlayerImage\Barbie.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,9 @@
     <Resource Include="Images\Locations\Home.jpg" />
     <Resource Include="Images\Locations\LynxCabin.png" />
     <Resource Include="Images\Locations\TownGate.png" />
+    <Resource Include="Images\PlayerImage\Barbie.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

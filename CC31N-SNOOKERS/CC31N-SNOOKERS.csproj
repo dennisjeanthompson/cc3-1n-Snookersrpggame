@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Background\Barbie.jpg" />
     <None Remove="Background\bluu.jpg" />
     <None Remove="Background\colz.jpg" />
     <None Remove="Background\CoolBack.gif" />
@@ -51,6 +52,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Background\Barbie.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\bluu.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
