@@ -36,7 +36,7 @@ namespace Engine.Models
                 // Return the first item from the list (index 0)
                 return _standardGameItems[0].Clone();
 
-              
+                
             }
 
             else

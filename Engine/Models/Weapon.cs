@@ -23,7 +23,7 @@ namespace Engine.Models
             this.MinmimumDamage = minmimumDamage;
         }
 
-        public Weapon Clone()
+        public new Weapon  Clone()
         {
             return new Weapon(this.ItemTypeID, this.Name, this.Price, this.ImageName ,this.MinmimumDamage, this.MaxmimumDamage);
         }
