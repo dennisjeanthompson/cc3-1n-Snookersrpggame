@@ -19,7 +19,6 @@ namespace Engine.Models
             _standardGameItems.Add(new Weapon(102, "Pink Sword", 5, "Rose Blossom Azure ", 1, 3));
             _standardGameItems.Add(new Weapon(103, "Blue Sword", 10, "Azure Frostblade", 1, 6));
             // int itemTypeId,string name,int price,string imageName)
-            // If the GameItem is not null return a clone of the GameItem. Else return null.
 
 
 
@@ -28,12 +27,11 @@ namespace Engine.Models
 
         public static GameItem  CreateGameItem()
         {
-            // return _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemId);
-            //If the GameItem is not null return a clone of the GameItem. Else return null.
+          
 
             if (_standardGameItems.Count > 0)
             {
-                // Return the first item from the list (index 0)
+             
                 return _standardGameItems[0].Clone();
 
                 
@@ -41,7 +39,7 @@ namespace Engine.Models
 
             else
             {
-                // If the list is empty, return null
+              
                 return null;
             }
 

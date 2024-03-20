@@ -14,11 +14,9 @@ namespace Engine.Models
 
         public int MaxmimumDamage{get;set;}
         public  int MinmimumDamage { get; set; }
-        public Weapon(int itemTypeId, string name, int price, string imageName, int minmimumDamage,int maxmimumDamage) :base(itemTypeId,  name,price, imageName)//wtf is this
+        public Weapon(int itemTypeId, string name, int price, string imageName, int minmimumDamage,int maxmimumDamage) :base(itemTypeId,  name,price, imageName)
         {
-            //: base(VehicleSize.Compact, licensePlate)
-
-            //Use the base keyword in calling the GameItem constructor in the Weapon constructor.
+            
             this.MaxmimumDamage = maxmimumDamage;
             this.MinmimumDamage = minmimumDamage;
         }
@@ -29,6 +27,6 @@ namespace Engine.Models
         }
 
 
-        //base.Ge
+       
     }
 }

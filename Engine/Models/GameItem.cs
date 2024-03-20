@@ -33,16 +33,7 @@ namespace Engine.Models
         }
 
 
-        /*  public virtual void Getinfo(string itemTypeId, string name, decimal price, string imageName)
-          {
-              this.ItemTypeID = itemTypeId;
-              this.Name = name;
-              this.Price = price;
-              this.ImageName = imageName;
-          }
-      */
-        ///imade dumb
-
+     
 
 
 
