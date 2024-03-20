@@ -14,18 +14,18 @@ namespace Engine.Models
         static ItemFactory() {
         
         _standardGameItems = new List<GameItem>();
-            _standardGameItems.Add(new Weapon(100, "Iron Sword", 1, "Forgeheart Blade", 1, 3));
-            _standardGameItems.Add(new Weapon(101, "Golden Sword", 6, "Sunfire Glimmer",1,4));
-
-
-
+            _standardGameItems.Add(new Weapon(100, "Iron Sword", 2, "Forgeheart Blade", 1, 3));
+            _standardGameItems.Add(new Weapon(101, "Golden Sword", 6, "Sunfire Glimmer",1,5));
+            _standardGameItems.Add(new Weapon(102, "Pink Sword", 5, "Rose Blossom Azure ", 1, 3));
+            _standardGameItems.Add(new Weapon(103, "Blue Sword", 10, "Azure Frostblade", 1, 6));
+            // int itemTypeId,string name,int price,string imageName)
             // If the GameItem is not null return a clone of the GameItem. Else return null.
 
 
 
 
         }
-     
+
         public static GameItem  CreateGameItem()
         {
             // return _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemId);

@@ -11,7 +11,11 @@ namespace Engine.Models
         public int ItemID { get; set; }
         public int Quantity{get;set;}
 
-
+        public ItemQuantity(int intemID, int quantity)
+        {
+            ItemID = intemID;
+            Quantity = quantity;
+        }
 
 
 
