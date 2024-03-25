@@ -16,19 +16,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Images\ItemImage\BeareClawz.png" />
+    <None Remove="Images\ItemImage\BearGallblader.png" />
     <None Remove="Images\ItemImage\CentepedeEssence.jpg" />
+    <None Remove="Images\ItemImage\DawnWoodForeztz.webp-autosave.kra" />
+    <None Remove="Images\ItemImage\earth_planet_destroyed_by_moon_2371711263.png" />
+    <None Remove="Images\ItemImage\EldoriaTownSquare.png" />
     <None Remove="Images\ItemImage\EYEcentepede.jpg" />
+    <None Remove="Images\ItemImage\f10198884541d8b3742e91845f01dfaf.jpeg" />
+    <None Remove="Images\ItemImage\firee.webp" />
     <None Remove="Images\ItemImage\fireezzz.png" />
-    <None Remove="Images\ItemImage\Gallbladder_of_blood_red_item__190835929.png" />
-    <None Remove="Images\ItemImage\Gallbladder_red_color_blood__272335147.png" />
+    <None Remove="Images\ItemImage\glowing_evil_sword_only__2196857910.png" />
+    <None Remove="Images\ItemImage\glowing_sword_demonic__2792070491.png" />
     <None Remove="Images\ItemImage\glowing_sword_only__3045701784.png" />
-    <None Remove="Images\ItemImage\pixlr-image-generator-a9899425-8d63-4aac-97e6-962956a451bb.png" />
+    <None Remove="Images\ItemImage\mountain-and-meadow-ground-png-cartoon-11546973714o9xkmvz6qi.png" />
+    <None Remove="Images\ItemImage\old-medieval-town-gate-bridge-260nw-2204651017.jpeg" />
+    <None Remove="Images\ItemImage\Potion.png" />
     <None Remove="Images\ItemImage\Potionz.png" />
+    <None Remove="Images\ItemImage\RedSword.jpg" />
     <None Remove="Images\ItemImage\RedSwordzx.png" />
+    <None Remove="Images\ItemImage\satanic-disguting-greesy-demon-pure-evil-upscaled.jpg" />
+    <None Remove="Images\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled %281%29.jpg" />
+    <None Remove="Images\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled.jpg" />
+    <None Remove="Images\ItemImage\satan_angry_demonic_hell_gore_face_eater_3314505710.png" />
+    <None Remove="Images\ItemImage\Screenshot17-1920x1080-5ac104c0c9d47cc31bcd1c1c696cebf9.jpeg" />
     <None Remove="Images\ItemImage\serpentscale.jpg" />
+    <None Remove="Images\ItemImage\SerpentScale.png" />
     <None Remove="Images\ItemImage\Serpent_Scale_758471684.png" />
+    <None Remove="Images\ItemImage\sowrdss.jpg" />
     <None Remove="Images\ItemImage\sowrdssz.jpg" />
+    <None Remove="Images\ItemImage\ssssssssssssssssss.png" />
     <None Remove="Images\ItemImage\SwordReed.png" />
+    <None Remove="Images\ItemImage\ToxicGland.png" />
     <None Remove="Images\ItemImage\wierd_small_evil_item_dead__1343190293.png" />
     <None Remove="Images\ItemImage\wierd_small_evil_item__3517160176.png" />
     <None Remove="Images\Locations\AlmaMarketSquare.jpg" />
@@ -44,7 +63,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\ItemImage\BeareClawz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\glowing_evil_sword_only__2196857910.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\glowing_sword_demonic__2792070491.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\RedSword.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\satanic-disguting-greesy-demon-pure-evil-upscaled.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled (1).jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\satan_angry_demonic_hell_gore_face_eater_3314505710.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\ItemImage\sowrdssz.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ItemImage\ssssssssssssssssss.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\ItemImage\SwordReed.png">
@@ -65,16 +108,16 @@
     <Resource Include="Images\ItemImage\fireezzz.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\ItemImage\Gallbladder_of_blood_red_item__190835929.png">
+    <Resource Include="Images\ItemImage\BearGallblader.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\ItemImage\Gallbladder_red_color_blood__272335147.png">
+    <Resource Include="Images\ItemImage\ToxicGland.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\ItemImage\glowing_sword_only__3045701784.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\ItemImage\pixlr-image-generator-a9899425-8d63-4aac-97e6-962956a451bb.png">
+    <Resource Include="Images\ItemImage\SerpentScale.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\ItemImage\Potionz.png">

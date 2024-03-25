@@ -20,6 +20,11 @@ internal static  class WorldFactory
             newWorld.AddLocation(2, 0, "Dawn Wood Forest", "A place filled with tall trees and wild giant animals", "/Engine;component/Images/Locations/DawnWoodForest.png");
             newWorld.AddLocation(-1, 0, "Alma Market Shop", "The market shop of Alma. He sells weapons and other items", "/Engine;component/Images/Locations/AlmaMarketSquare.jpg");
             newWorld.AddLocation(0, 0, "Eldoria Town Square", "A beautiful town of Eldoria", "/Engine;component/Images/Locations/EldoriaTownSquare.png");
+
+
+
+
+
             return newWorld;
         }
     }
