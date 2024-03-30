@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace Engine.ViewModels
 {
@@ -13,6 +15,8 @@ namespace Engine.ViewModels
     {
         private Location? _currentLocation;
         public Player? CurrentPlayer { get; set; }
+        public DataGrid InventoryGrid { get; set; }
+        public Image ItemImage { get; set; }
         public Location? CurrentLocation {
             get { return _currentLocation; }
             set
@@ -63,7 +67,10 @@ namespace Engine.ViewModels
             CurrentPlayer.Inventory.Add(ItemFactory.CreateGameItem(207));
             CurrentPlayer.Inventory.Add(ItemFactory.CreateGameItem(208));
             CurrentPlayer.Inventory.Add(ItemFactory.CreateGameItem(209));
-
+            
+            InventoryGrid = new DataGrid();
+            ItemImage = new Image();
+            InventoryGrid.SelectionChanged += InventoryGrid_SelectionChanged;
             /*
 
 
@@ -96,8 +103,18 @@ namespace Engine.ViewModels
 
         }
 
+        private void InventoryGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Your logic for handling selection change in the InventoryGrid goes here
+            // This method will be triggered when an item is selected in the InventoryGrid
+            var selectedInventoryItem = InventoryGrid.SelectedItem as GameItem;
 
-
+            // Update the ItemImage control with the selected item's image
+            if (selectedInventoryItem != null && ItemImage != null)
+            {
+                ItemImage.Source = new BitmapImage(new Uri(selectedInventoryItem.ImageName, UriKind.RelativeOrAbsolute));
+            }
+        }
         public void MoveNorth()
         {
             if (HasLocationToNorth && CurrentLocation != null)

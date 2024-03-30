@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection.PortableExecutable;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,7 +9,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.Xml.Linq;
+using Engine.Models;
 using Engine.ViewModels;
 namespace CC31N_SNOOKERS
 {
@@ -23,6 +25,7 @@ namespace CC31N_SNOOKERS
             InitializeComponent();
             _gameSession = new GameSession();
           DataContext = _gameSession;
+            _gameSession.ItemImage = ItemImage;
         }
         private void OnClick_MoveNorth(object sender, RoutedEventArgs e)
         {
@@ -40,41 +43,40 @@ namespace CC31N_SNOOKERS
         {
             _gameSession.MoveEast();
         }
-     /*   private void InventoryGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void InventoryGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Clear the existing items in the DataGrid
-            InventoryGrid.Items.Clear();
-
             // Get the selected item from the Inventory DataGrid
             var selectedInventoryItem = InventoryGrid.SelectedItem as GameItem;
 
-            // If a valid item is selected, update the image
+            // Display the image corresponding to the selected item
             if (selectedInventoryItem != null)
             {
-                // Assuming you have a property named ImagePath in your GameItem class
-                // Update the image source with the selected item's image path
-                if (!string.IsNullOrEmpty(selectedInventoryItem.ImageName))
-                {
-                    // Construct the URI for the image path
-                    var imagePathUri = new Uri(selectedInventoryItem.ImageName, UriKind.RelativeOrAbsolute);
-
-                    // Create a BitmapImage and set its source to the constructed URI
-                    ItemImage.Source = new BitmapImage(imagePathUri);
-                }
-                else
-                {
-                    // Clear the image if the image path is empty
-                    ItemImage.Source = null;
-                }
-            }
-            else
-            {
-                // Clear the image if no item is selected
-                ItemImage.Source = null;
+                // Set the Image source based on the selected item
+                ItemImage.Source = new BitmapImage(new Uri(selectedInventoryItem.ImageName, UriKind.RelativeOrAbsolute));
             }
         }
-     */
-
+        /*
+         <Grid x:Name="ImageDisplayGrid" Grid.Row="0" Grid.Column="0">
+               <Label Grid.Row="0"  Grid.Column= "0" Content= "Item Information"   BorderBrush= "DarkRed" BorderThickness= "4" FontWeight= "ExtraBold" Foreground= "Red" FontSize= "19"
+                      />
+               < Image x:Name= "ItemImage" Stretch= "UniformToFill" />
+        </ Grid >
+       <    < TabControl Background= "Blue"  Foreground= "Red" >
+             < TabItem Header= "Inventory" Background= "DarkBlue"   FontSize= "11" Foreground= "Red" >
+                   < DataGrid ItemsSource= "{Binding CurrentPlayer.Inventory}"
+                         AutoGenerateColumns= "False"
+                             HeadersVisibility= "Column" Background= "Blue"  Foreground= "Red"  SelectionChanged= "InventoryGrid_SelectionChanged" x:Name= "InventoryGrid" >
+                        < DataGrid.Columns >
+                            < DataGridTextColumn Header= "Description"
+                                               Binding= "{Binding Name}"
+                                              Width= "*" />
+                           < DataGridTextColumn Header= "Price"
+                                               Binding= "{Binding Price}"
+                                               Width= "Auto" />
+                       </ DataGrid.Columns >
+                   </ DataGrid >
+              </ TabItem >
+        */
 
     }
 }

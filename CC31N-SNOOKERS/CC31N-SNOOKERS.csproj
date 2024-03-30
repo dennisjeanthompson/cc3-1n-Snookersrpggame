@@ -10,21 +10,53 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Background\2demonfacebac.jpg" />
     <None Remove="Background\Barbie.jpg" />
+    <None Remove="Background\BeareClawz.png" />
+    <None Remove="Background\BearGallblader.png" />
     <None Remove="Background\bluu.jpg" />
+    <None Remove="Background\bodiesofdeath.jpg" />
+    <None Remove="Background\CentepedeEssence.jpg" />
     <None Remove="Background\colz.jpg" />
     <None Remove="Background\CoolBack.gif" />
     <None Remove="Background\dawns.jpg" />
+    <None Remove="Background\demonloverface.jpg" />
     <None Remove="Background\dev.jpg" />
     <None Remove="Background\devs.avif" />
     <None Remove="Background\dope.jpg" />
     <None Remove="Background\dsa.jpg" />
+    <None Remove="Background\EYEcentepede.jpg" />
     <None Remove="Background\facer.jpg" />
     <None Remove="Background\fad.jpg" />
     <None Remove="Background\fde.jpg" />
     <None Remove="Background\fed.avif" />
+    <None Remove="Background\fireezzz.png" />
+    <None Remove="Background\glowing_sword_only__3045701784.png" />
     <None Remove="Background\heat.jpg" />
     <None Remove="Background\hellzzx.jpg" />
+    <None Remove="Background\ItemImage\BeareClawz.png" />
+    <None Remove="Background\ItemImage\BearGallblader.png" />
+    <None Remove="Background\ItemImage\CentepedeEssence.jpg" />
+    <None Remove="Background\ItemImage\EYEcentepede.jpg" />
+    <None Remove="Background\ItemImage\fireezzz.png" />
+    <None Remove="Background\ItemImage\glowing_evil_sword_only__2196857910.png" />
+    <None Remove="Background\ItemImage\glowing_sword_demonic__2792070491.png" />
+    <None Remove="Background\ItemImage\glowing_sword_only__3045701784.png" />
+    <None Remove="Background\ItemImage\Potionz.png" />
+    <None Remove="Background\ItemImage\RedSword.jpg" />
+    <None Remove="Background\ItemImage\RedSwordzx.png" />
+    <None Remove="Background\ItemImage\satanic-disguting-greesy-demon-pure-evil-upscaled.jpg" />
+    <None Remove="Background\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled (1).jpg" />
+    <None Remove="Background\ItemImage\satan_angry_demonic_hell_gore_face_eater_3314505710.png" />
+    <None Remove="Background\ItemImage\serpentscale.jpg" />
+    <None Remove="Background\ItemImage\SerpentScale.png" />
+    <None Remove="Background\ItemImage\sowrdssz.jpg" />
+    <None Remove="Background\ItemImage\ssssssssssssssssss.png" />
+    <None Remove="Background\ItemImage\SwordReed.png" />
+    <None Remove="Background\ItemImage\ToxicGland.png" />
+    <None Remove="Background\ItemImage\wierd_small_evil_item_dead__1343190293.png" />
+    <None Remove="Background\ItemImage\wierd_small_evil_item__3517160176 - Copy.png" />
+    <None Remove="Background\ItemImage\wierd_small_evil_item__3517160176.png" />
     <None Remove="Background\lop.jpg" />
     <None Remove="Background\natre.jpg" />
     <None Remove="Background\natues.jpg" />
@@ -35,16 +67,32 @@
     <None Remove="Background\pexels-pixabay-87009.jpg" />
     <None Remove="Background\pexels.jpg" />
     <None Remove="Background\pinkk.jpg" />
+    <None Remove="Background\Potionz.png" />
     <None Remove="Background\qw.jpg" />
     <None Remove="Background\qwe.jpg" />
+    <None Remove="Background\RedSwordzx.png" />
     <None Remove="Background\salt.jpg" />
     <None Remove="Background\sat.jpg" />
+    <None Remove="Background\sataniz.jpg" />
+    <None Remove="Background\SerpentScale.png" />
     <None Remove="Background\shhh.jpg" />
     <None Remove="Background\skulz.jpg" />
     <None Remove="Background\snier.png" />
     <None Remove="Background\snierr.png" />
     <None Remove="Background\souef.jpg" />
+    <None Remove="Background\sowrdssz.jpg" />
+    <None Remove="Background\SwordReed.png" />
+    <None Remove="Background\ToxicGland.png" />
+    <None Remove="Background\verycooldemonbac.jpg" />
+    <None Remove="Background\wierd_small_evil_item_dead__1343190293.png" />
+    <None Remove="Background\wierd_small_evil_item__3517160176.png" />
     <None Remove="roar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background\2demonfacebac.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -55,7 +103,19 @@
     <Resource Include="Background\Barbie.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Background\BeareClawz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\BearGallblader.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\bluu.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\bodiesofdeath.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\CentepedeEssence.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\colz.jpg">
@@ -65,6 +125,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\dawns.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\demonloverface.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\dev.jpg">
@@ -79,6 +142,9 @@
     <Resource Include="Background\dsa.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Background\EYEcentepede.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\facer.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -91,10 +157,85 @@
     <Resource Include="Background\fed.avif">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Background\fireezzz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\glowing_sword_only__3045701784.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\heat.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\hellzzx.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\BeareClawz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\BearGallblader.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\CentepedeEssence.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\EYEcentepede.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\fireezzz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\glowing_evil_sword_only__2196857910.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\glowing_sword_demonic__2792070491.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\glowing_sword_only__3045701784.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\Potionz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\RedSword.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\RedSwordzx.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\satanic-disguting-greesy-demon-pure-evil-upscaled.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled (1).jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\satan_angry_demonic_hell_gore_face_eater_3314505710.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\serpentscale.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\SerpentScale.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\sowrdssz.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\ssssssssssssssssss.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\SwordReed.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\ToxicGland.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\wierd_small_evil_item_dead__1343190293.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\wierd_small_evil_item__3517160176 - Copy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ItemImage\wierd_small_evil_item__3517160176.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\lop.jpg">
@@ -127,16 +268,28 @@
     <Resource Include="Background\pinkk.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Background\Potionz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\qw.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\qwe.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Background\RedSwordzx.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\salt.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\sat.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\sataniz.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\SerpentScale.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\shhh.jpg">
@@ -155,6 +308,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\roar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\sowrdssz.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\SwordReed.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\ToxicGland.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\verycooldemonbac.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\wierd_small_evil_item_dead__1343190293.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\wierd_small_evil_item__3517160176.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

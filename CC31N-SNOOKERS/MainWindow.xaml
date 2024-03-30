@@ -93,46 +93,69 @@
 
             <!--Inventory and Quest-->
         </Grid>
-        <Grid Grid.Row="2" Grid.Column="0"  Canvas.ZIndex="1" Opacity="0.8"  >
+        <Grid Grid.Row="2" Grid.Column="0"  Canvas.ZIndex="1" Opacity="0.8">
             <TabControl Background="Blue"  Foreground="Red">
-                <TabItem Header="Inventory" Background="DarkBlue"   FontSize="11" Foreground="Red">
+                <TabItem Header="Inventory" FontSize="11" Foreground="Red" FontFamily="Elephant">
+                    <TabItem.Background>
+                        <SolidColorBrush Color="DarkBlue" Opacity="0.8"/>
+                    </TabItem.Background>
                     <DataGrid ItemsSource="{Binding CurrentPlayer.Inventory}"
-                              AutoGenerateColumns="False"
-                              HeadersVisibility="Column" Background="Blue"  Foreground="Red" >
-                        <DataGrid.Columns >
+                      AutoGenerateColumns="False"
+                      HeadersVisibility="Column"
+                     
+                      Foreground="DarkRed"
+                      SelectionChanged="InventoryGrid_SelectionChanged"
+                      x:Name="InventoryGrid"
+                            FontFamily="Elephant" >
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource {x:Type DataGridCell}}">
+                                <Setter Property="Background" Value="Yellow"/>
+                                <!-- Set background color for cells in Description column -->
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
                             <DataGridTextColumn Header="Description"
-                                                Binding="{Binding Name}"
-                                                Width="*"/>
+                                        Binding="{Binding Name}"
+                                        Width="*"  Foreground="DarkRed"/>
                             <DataGridTextColumn Header="Price"
-                                                Binding="{Binding Price}"
-                                                Width="Auto"/>
+                                        Binding="{Binding Price}"
+                                        Width="Auto"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                </TabItem  >
-                <TabItem Header="Quests" >
+                </TabItem>
+                <TabItem Header="Quests">
+                    <TabItem.Background>
+                        <SolidColorBrush Color="DarkBlue" Opacity="0.8" />
+                        
+                    </TabItem.Background>
                     <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
-                              AutoGenerateColumns="False"
-                              HeadersVisibility="Column">
+                      AutoGenerateColumns="False"
+                      HeadersVisibility="Column"
+                                 Foreground="DarkBlue" FontSize="11" >
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource {x:Type DataGridCell}}">
+                                <Setter Property="Background" Value="IndianRed"/>
+                                <!-- Set background color for cells in Description column -->
+                            </Style>
+                        </DataGrid.Resources>
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Name"
-                                                Binding="{Binding PlayerQuest.Name}"
-                                                Width="*"/>
+                                        Binding="{Binding PlayerQuest.Name}"
+                                        Width="*" />
                             <DataGridTextColumn Header="Done?"
-                                                Binding="{Binding IsCompleted}"
-                                                Width="Auto"/>
+                                        Binding="{Binding IsCompleted}"
+                                        Width="Auto" />
                         </DataGrid.Columns>
                     </DataGrid>
                 </TabItem>
             </TabControl>
-
-
-
-            <!--   <Label Grid.Row="2" Grid.Column="0"  Canvas.ZIndex="0" BorderBrush="DarkRed" BorderThickness="4"  Foreground="DarkRed" FontSize="17" FontWeight="ExtraBold"/>-->
         </Grid>
 
-            <Image Source="/Background/hellzzx.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"  Canvas.ZIndex="0" /> 
-    
-    <!--End of inventory and quest-->
+
+        <Image Source="/Background/hellzzx.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"  Canvas.ZIndex="0" />
+        <Image Source="/Background/demonloverface.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"  Canvas.ZIndex="0" Opacity="0.5"/>
+
+        <!--End of inventory and quest-->
       
       <!--Game MESsage -->
         <Label Grid.Row="1" Grid.Column="2"   Canvas.ZIndex="1" BorderBrush="DarkRed" BorderThickness="4" 
@@ -144,7 +167,7 @@
         <!--END of game message-->
       
       <!--Item info and item button use-->
-        <Label Grid.Row="2" Grid.Column="1"  Background="CornflowerBlue"/>
+        <Label Grid.Row="2" Grid.Column="1"  />
         <Grid Grid.Row="2" Grid.Column="1">
         <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -153,14 +176,29 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-
+      
             </Grid.ColumnDefinitions>
-            <Label Grid.Row="0"  Grid.Column="0" Content="Item Information" Canvas.ZIndex="1"  BorderBrush="DarkRed" BorderThickness="4" FontWeight="ExtraBold" Foreground="Red" FontSize="19" />
-            <Image Source="/Background/heat.jpg" Stretch="Fill" Opacity="0.9"/>
-            <Image Source="/Background/dev.jpg" Stretch="Fill" Opacity=".1"/>
+           
+           
+           
             <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Canvas.ZIndex="1"  BorderBrush="DarkRed" BorderThickness="4" FontSize="19" FontWeight="ExtraBold" Foreground="Red"/>
-            <Image x:Name="ItemImage" Grid.Row="3" Grid.Column="0" Width="100" Height="100" />
+            <!--item Information-->
+
+            <Grid x:Name="ImageDisplayGrid" Grid.Row="0" Grid.Column="0" >
+                <Label Grid.Row="0"  Grid.Column="0" Content="Item Image"   BorderBrush="DarkRed" BorderThickness="6" FontWeight="ExtraBold" Foreground="DarkRed" FontSize="19" Background="Tomato"
+                       
+                       />
+                <Image Source="Background/heat.jpg" Opacity="0.3"/>
+                <Image Source="Background/verycooldemonbac.jpg" Opacity="0.5" Stretch="Fill"/>
+                <Image Source="Background/2demonfacebac.jpg" Opacity="0.4" Stretch="Fill"/>
+                <Image x:Name="ItemImage" Stretch="Fill"/>
+            </Grid>
+            
+            <!--End  of item Information-->
+            
             <Image Source="/Background/fde.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".5"/>
+            <Image Source="/Background/bodiesofdeath.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".5"/>
+            <Image Source="/Background/sataniz.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".2"/>
             <!--End of item and buttons use-->
           
 <!--Location image-->
