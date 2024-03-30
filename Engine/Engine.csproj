@@ -146,4 +146,8 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Images\mLocationz\" />
+  </ItemGroup>
+
 </Project>

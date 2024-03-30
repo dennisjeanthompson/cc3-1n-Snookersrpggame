@@ -21,8 +21,8 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
-      
-<!--  Menu page-->
+
+        <!--  Menu page-->
         <Label Grid.Row="0" FontWeight="UltraBlack" Grid.Column="0" Content="Menu"  FontSize="38" FontFamily="Elephant"  Canvas.ZIndex="1"  Foreground="DarkBlue" />
         <Border BorderBrush="DarkRed" BorderThickness="2" Grid.Row="0" Grid.Column="1" />
         <Border BorderBrush="DarkRed" BorderThickness="5" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
@@ -32,19 +32,19 @@
         <Image Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="1"  Source="/Background/sat.jpg" Opacity="0.8" Stretch="Fill" />
         <!--<Image Source="" Grid.Row="0" Grid.Column="0" />-->
         <!-- End of Menu -->
-      <!-- Enter-->
-      <!--PLayer Information-->
+        <!-- Enter-->
+        <!--PLayer Information-->
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>                
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-<!--End of player information page-->
-          
-          <!--rows of Player Information-->
+            <!--End of player information page-->
+
+            <!--rows of Player Information-->
             <Label Grid.Row="0" Grid.Column="0"  Background="DarkKhaki"  BorderBrush="DarkRed" BorderThickness="4"  />
             <Image Stretch="Fill" Source="/Background/skulz.jpg"  Opacity="0.5" />
             <Grid  Grid.Row="0" Grid.Column="0"  >
@@ -55,14 +55,14 @@
                     <RowDefinition Height ="Auto"/>
                     <RowDefinition Height ="Auto"/>
                     <RowDefinition Height ="Auto"/>
-              
+
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
-                  
-                  <!--content of Player Information-->
+
+                    <!--content of Player Information-->
                 </Grid.ColumnDefinitions>
                 <Border  BorderThickness="1" Grid.Row="0" Grid.Column="0"/>
                 <Label Grid.Row="0" Grid.Column="0" Content="Name:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold" />
@@ -77,12 +77,12 @@
                 <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"  FontSize="15" Foreground="DarkGoldenrod"/>
                 <Label Grid.Row="5" Grid.Column="0" Content="Level:"  FontSize="15" Foreground="DarkRed" FontWeight="Bold"/>
                 <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"  FontSize="15" Foreground="DarkGoldenrod"/>
-            
-       
-            <!--End content of Player Information-->
-            
-            
-            <!--Player Image-->
+
+
+                <!--End content of Player Information-->
+
+
+                <!--Player Image-->
             </Grid>
             <Label Grid.Row="2" Grid.Column="0"  BorderBrush="DarkRed" BorderThickness="4"  Canvas.ZIndex="1"   FontSize="21" Foreground="Red"/>
             <Image Source="/Background/Bluu.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"/>
@@ -90,12 +90,49 @@
             <Image Source="/Engine;component/Images/PlayerImage/Barbie.jpg " Grid.Row="2" Grid.Column="0" Stretch="Fill"  />
             <Image Source="/Background/Barbie.jpg" Grid.Row="1" Grid.Column="0" Stretch="Fill"    />
             <!--END ofplAYER Image-->
-          
-          <!--Inventory and Quest-->
+
+            <!--Inventory and Quest-->
         </Grid>
-        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quests" Canvas.ZIndex="1" BorderBrush="DarkRed" BorderThickness="4"  Foreground="DarkRed" FontSize="17" FontWeight="ExtraBold"/>
-        <Image Source="/Background/hellzzx.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill" Opacity=".6" />
-        <!--End of inventory and quest-->
+        <Grid Grid.Row="2" Grid.Column="0"  Canvas.ZIndex="1" Opacity="0.8"  >
+            <TabControl Background="Blue"  Foreground="Red">
+                <TabItem Header="Inventory" Background="DarkBlue"   FontSize="11" Foreground="Red">
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Inventory}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column" Background="Blue"  Foreground="Red" >
+                        <DataGrid.Columns >
+                            <DataGridTextColumn Header="Description"
+                                                Binding="{Binding Name}"
+                                                Width="*"/>
+                            <DataGridTextColumn Header="Price"
+                                                Binding="{Binding Price}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem  >
+                <TabItem Header="Quests" >
+                    <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
+                              AutoGenerateColumns="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name"
+                                                Binding="{Binding PlayerQuest.Name}"
+                                                Width="*"/>
+                            <DataGridTextColumn Header="Done?"
+                                                Binding="{Binding IsCompleted}"
+                                                Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+            </TabControl>
+
+
+
+            <!--   <Label Grid.Row="2" Grid.Column="0"  Canvas.ZIndex="0" BorderBrush="DarkRed" BorderThickness="4"  Foreground="DarkRed" FontSize="17" FontWeight="ExtraBold"/>-->
+        </Grid>
+
+            <Image Source="/Background/hellzzx.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"  Canvas.ZIndex="0" /> 
+    
+    <!--End of inventory and quest-->
       
       <!--Game MESsage -->
         <Label Grid.Row="1" Grid.Column="2"   Canvas.ZIndex="1" BorderBrush="DarkRed" BorderThickness="4" 
@@ -122,7 +159,7 @@
             <Image Source="/Background/heat.jpg" Stretch="Fill" Opacity="0.9"/>
             <Image Source="/Background/dev.jpg" Stretch="Fill" Opacity=".1"/>
             <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Canvas.ZIndex="1"  BorderBrush="DarkRed" BorderThickness="4" FontSize="19" FontWeight="ExtraBold" Foreground="Red"/>
-            
+            <Image x:Name="ItemImage" Grid.Row="3" Grid.Column="0" Width="100" Height="100" />
             <Image Source="/Background/fde.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".5"/>
             <!--End of item and buttons use-->
           

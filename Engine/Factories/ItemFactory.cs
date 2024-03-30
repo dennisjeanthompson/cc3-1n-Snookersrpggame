@@ -30,7 +30,7 @@ namespace Engine.Models
             _standardGameItems.Add(new GameItem(208, "Serpent Scale", 2000, "/ Engine; component / Images / ItemImage / SerpentScale.png"));
             _standardGameItems.Add(new GameItem(209, "Toxic Gland", 3000, "/ Engine; component / Images / ItemImage / ToxicGland.png"));
 
-
+        
 
 
             // int itemTypeId,string name,int price,string imageName)
@@ -40,65 +40,56 @@ namespace Engine.Models
 
         }
 
-        public static GameItem  CreateGameItem()
+         public static GameItem CreateGameItem(int itemTypeID)
+   {
+       GameItem standardItem = _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
+
+       if (standardItem != null)
+       {
+           return standardItem.Clone();
+       }
+       else
+       {
+           // Throw an exception if the itemTypeID does not correspond to any item
+           throw new ArgumentException($"Item with type ID {itemTypeID} does not exist.", nameof(itemTypeID));
+       }
+   }
+
+           
+       /* public static GameItem CreateGameItem(int itemTypeID)
         {
-          
+            GameItem standardItem = _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
 
-            if (_standardGameItems.Count > 0)
+            if (standardItem != null)
             {
-             
-                return _standardGameItems[0].Clone();
-
-                
+                return standardItem.Clone();
             }
-
             else
             {
-              
-                return null;
+                // Throw an exception if the itemTypeID does not correspond to any item
+                throw new ArgumentException($"Item with type ID {itemTypeID} does not exist.", nameof(itemTypeID));
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*  foreach(var items in _standardGameItems)
-              {
-                  return items;
-                  if(_standardGameItems != null)
-                  {
-                      _standardGameItems.Clone()
-                  }
-                  else { return null; }
-              }
-
-                                      */
-
-            /* return _standardGameItems;
-             if(_standardGameItems != null)
-             {
-                 _standardGameItems.Clone();
-             }
-             else
-             {
-                 return null;
-             }*/
         }
-       
+
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
+
+
+
 }
