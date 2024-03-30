@@ -185,7 +185,7 @@
             <!--item Information-->
 
             <Grid x:Name="ImageDisplayGrid" Grid.Row="0" Grid.Column="0" >
-                <Label Grid.Row="0"  Grid.Column="0" Content="Item Image"   BorderBrush="DarkRed" BorderThickness="6" FontWeight="ExtraBold" Foreground="DarkRed" FontSize="19" Background="Tomato"
+                <Label Grid.Row="0"  Grid.Column="0" Content="           Item Image"   BorderBrush="DarkRed"  BorderThickness="6" FontWeight="ExtraBold" Foreground="DarkRed" FontSize="19" Background="Tomato"
                        
                        />
                 <Image Source="Background/heat.jpg" Opacity="0.3"/>
