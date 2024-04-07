@@ -74,7 +74,7 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <!-- Game Messages -->
-            <Border Grid.Row="0" Grid.Column="0"
+            <Border Grid.Row="0" Grid.Column="1"
                     Grid.RowSpan="2"
                     BorderBrush="Gainsboro"
                     BorderThickness="1">
@@ -89,7 +89,7 @@
                 </RichTextBox>
             </Border>
             <!-- Location information -->
-            <Border Grid.Row="0" Grid.Column="1"
+            <Border Grid.Row="0" Grid.Column="0"
                   Background="CornflowerBlue"
                     BorderThickness="1">
                 <Grid Margin="3">
@@ -116,7 +116,7 @@
                 </Grid>
             </Border>
             <!-- Monster information -->
-            <Border Grid.Row="1" Grid.Column="1"
+            <Border Grid.Row="2" Grid.Column="0"
                     Background="Firebrick"
                     BorderThickness="1">
                 <Grid>
