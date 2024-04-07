@@ -14,6 +14,7 @@ namespace Engine.ViewModels
     public class GameSession : BaseNotifcationClass
     {
         private Location? _currentLocation;
+        private Monster _currentMonster;
         public Player? CurrentPlayer { get; set; }
         public DataGrid InventoryGrid { get; set; }
         public Image ItemImage { get; set; }
@@ -29,9 +30,19 @@ namespace Engine.ViewModels
                 OnPropertyChanged(nameof(HasLocationToWest));
                 OnPropertyChanged(nameof(HasLocationToEast));
                 GivePlayerQuestsAtLocation();
+                GetMonsterAtLocation();
             }
         }
-
+        public Monster CurrentMonster
+        {
+            get { return _currentMonster; }
+            set
+            {
+                _currentMonster = value;
+                OnPropertyChanged(nameof(CurrentMonster));
+                OnPropertyChanged(nameof(HasMonster));
+            }
+        }
         public World CurrentWorld { get; set; }
         public bool HasLocationToNorth => CurrentLocation != null && CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1) != null;
         public bool HasLocationToSouth => CurrentLocation != null && CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 1) != null;
@@ -39,6 +50,7 @@ namespace Engine.ViewModels
         public bool HasLocationToEast => CurrentLocation != null && CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate) != null;
 
         public bool HasLocationToWest => CurrentLocation != null && CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate) != null;
+        public bool HasMonster => CurrentMonster != null;
         public GameSession()
         {
             CurrentPlayer = new Player
@@ -155,7 +167,10 @@ namespace Engine.ViewModels
             }
         }
 
-
+        private void GetMonsterAtLocation()
+        {
+            CurrentMonster = CurrentLocation.GetMonster();
+        }
     }
 
 }
