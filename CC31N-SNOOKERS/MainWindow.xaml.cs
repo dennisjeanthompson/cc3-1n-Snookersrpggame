@@ -13,6 +13,7 @@ using System.Xml.Linq;
 using Engine.EventArgs;
 using Engine.Models;
 using Engine.ViewModels;
+using WPFUI;
 namespace CC31N_SNOOKERS
 {
     /// <summary>
@@ -20,7 +21,7 @@ namespace CC31N_SNOOKERS
     /// </summary>
     public partial class MainWindow : Window
     {
-        private GameSession _gameSession;
+        private readonly GameSession _gameSession = new GameSession();
         public MainWindow()
         {
             InitializeComponent();
@@ -83,13 +84,19 @@ namespace CC31N_SNOOKERS
         {
             _gameSession.AttackCurrentMonster();
         }
-        private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
+        private void OnGameMessageRaised(object? sender, GameMessageEventArgs e)
         {
             GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
             GameMessages.ScrollToEnd();
         }
+        private void OnClick_DisplayTradeScreen(object sender, RoutedEventArgs e)
+        {
+            TradeScreen tradeScreen = new TradeScreen();
+            tradeScreen.Owner = this;
+            tradeScreen.DataContext = _gameSession;
+            tradeScreen.ShowDialog();
+        }
 
-      
 
     }
 }
