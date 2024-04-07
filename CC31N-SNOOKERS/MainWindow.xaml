@@ -228,20 +228,20 @@
                 
                 
             </Grid>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-           
-            <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Canvas.ZIndex="1"  BorderBrush="DarkRed" BorderThickness="4" FontSize="19" FontWeight="ExtraBold" Foreground="Red"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--    <Label Grid.Row="0" Grid.Column="1" Content="Item Buttons" Canvas.ZIndex="1"  BorderBrush="DarkRed" BorderThickness="4" FontSize="19" FontWeight="ExtraBold" Foreground="Red"/>-->
             <!--item Information-->
 
             <Grid x:Name="ImageDisplayGrid" Grid.Row="0" Grid.Column="0" >
@@ -255,10 +255,10 @@
             </Grid>
             
             <!--End  of item Information-->
-            
-            <Image Source="/Background/fde.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".5"/>
-            <Image Source="/Background/bodiesofdeath.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".5"/>
-            <Image Source="/Background/sataniz.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".2"/>
+
+            <!--   <Image Source="/Background/fde.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".1"/>-->
+            <!--    <Image Source="/Background/bodiesofdeath.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".3"/>-->
+            <!--  <Image Source="/Background/sataniz.jpg" Grid.Row="0"  Grid.Column="1" Stretch="Fill" Opacity=".2"/>-->
             <!--End of item and buttons use-->
           
 <!--Location image-->
