@@ -36,22 +36,21 @@ namespace Engine.Models
         }
 
         public static GameItem CreateGameItem(int itemTypeID)
-   {
-       GameItem standardItem = _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
+        {
+            GameItem standardItem = _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
+            if (standardItem != null)
+            {
+                if (standardItem is Weapon)
+                {
+                    return (standardItem as Weapon).Clone();
+                }
+                return standardItem.Clone();
+            }
+            return null;
+        }
 
-       if (standardItem != null)
-       {
-           return standardItem.Clone();
-       }
-       else
-       {
-           // Throw an exception if the itemTypeID does not correspond to any item
-           throw new ArgumentException($"Item with type ID {itemTypeID} does not exist.", nameof(itemTypeID));
-       }
-   }
 
-           
-     
+
 
 
 
