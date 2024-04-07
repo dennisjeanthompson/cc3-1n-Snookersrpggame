@@ -10,6 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using Engine.EventArgs;
 using Engine.Models;
 using Engine.ViewModels;
 namespace CC31N_SNOOKERS
@@ -24,7 +25,8 @@ namespace CC31N_SNOOKERS
         {
             InitializeComponent();
             _gameSession = new GameSession();
-          DataContext = _gameSession;
+            _gameSession.OnMessageRaised += OnGameMessageRaised;
+            DataContext = _gameSession;
             _gameSession.ItemImage = ItemImage;
         }
         private void OnClick_MoveNorth(object sender, RoutedEventArgs e)
@@ -77,6 +79,10 @@ namespace CC31N_SNOOKERS
                    </ DataGrid >
               </ TabItem >
         */
-
+        private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
+        {
+            GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
+            GameMessages.ScrollToEnd();
+        }
     }
 }

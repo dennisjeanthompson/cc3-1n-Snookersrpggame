@@ -160,6 +160,29 @@
       <!--Game MESsage -->
         <Label Grid.Row="1" Grid.Column="2"   Canvas.ZIndex="1" BorderBrush="DarkRed" BorderThickness="4" 
               />
+
+
+
+        <Border Grid.Row="1" Grid.Column="2"
+                    Grid.RowSpan="2"
+                   
+                    BorderThickness="1">
+            <RichTextBox x:Name="GameMessages"
+                            
+                             VerticalScrollBarVisibility="Auto">
+                <RichTextBox.Resources>
+                    <Style TargetType="{x:Type Paragraph}">
+                        <Setter Property="Margin" Value="0"/>
+                    </Style>
+                </RichTextBox.Resources>
+            </RichTextBox>
+
+        </Border>
+
+
+
+
+
         <Label  Grid.Row="1" Grid.Column="2" Content="Game   Message"  Canvas.ZIndex="1" FontWeight="Bold" FontSize="21"  HorizontalAlignment="Center" Foreground="OrangeRed"/>
      <!--Ftre_sMG    <TextBlock  Grid.Row="1" Grid.Column="2"  Margin="0,22" TextWrapping="Wrap" Canvas.ZIndex="1" FontWeight="UltraBold" FontSize="21" /> -->
         <Image Grid.Row="1" Grid.Column="2" Source="/Background/dope.jpg" Opacity="0.9"  Visibility="Visible" Stretch="Fill"/>
