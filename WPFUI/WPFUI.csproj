@@ -93,6 +93,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="BackGround\devs.avif" />
+    <None Include="BackGround\fed.avif" />
+    <None Include="BackGround\ItemImage\DawnWoodForeztz.webp-autosave.kra" />
+    <None Include="BackGround\ItemImage\firee.webp" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +115,96 @@
     <Resource Include="GoldenSword.png" />
     <Resource Include="IronSword.png" />
     <Resource Include="Potion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\2demonfacebac.jpg" />
+    <Resource Include="BackGround\Barbie.jpg" />
+    <Resource Include="BackGround\BeareClawz.png" />
+    <Resource Include="BackGround\BearGallblader.png" />
+    <Resource Include="BackGround\bluu.jpg" />
+    <Resource Include="BackGround\bodiesofdeath.jpg" />
+    <Resource Include="BackGround\CentepedeEssence.jpg" />
+    <Resource Include="BackGround\colz.jpg" />
+    <Resource Include="BackGround\dawns.jpg" />
+    <Resource Include="BackGround\demonloverface.jpg" />
+    <Resource Include="BackGround\dev.jpg" />
+    <Resource Include="BackGround\dope.jpg" />
+    <Resource Include="BackGround\dsa.jpg" />
+    <Resource Include="BackGround\EYEcentepede.jpg" />
+    <Resource Include="BackGround\facer.jpg" />
+    <Resource Include="BackGround\fad.jpg" />
+    <Resource Include="BackGround\fde.jpg" />
+    <Resource Include="BackGround\fireezzz.png" />
+    <Resource Include="BackGround\glowing_sword_only__3045701784.png" />
+    <Resource Include="BackGround\heat.jpg" />
+    <Resource Include="BackGround\hellzzx.jpg" />
+    <Resource Include="BackGround\ItemImage\BeareClawz.png" />
+    <Resource Include="BackGround\ItemImage\BearGallblader.png" />
+    <Resource Include="BackGround\ItemImage\CentepedeEssence.jpg" />
+    <Resource Include="BackGround\ItemImage\earth_planet_destroyed_by_moon_2371711263.png" />
+    <Resource Include="BackGround\ItemImage\EldoriaTownSquare.png" />
+    <Resource Include="BackGround\ItemImage\EYEcentepede.jpg" />
+    <Resource Include="BackGround\ItemImage\f10198884541d8b3742e91845f01dfaf.jpeg" />
+    <Resource Include="BackGround\ItemImage\fireezzz.png" />
+    <Resource Include="BackGround\ItemImage\glowing_evil_sword_only__2196857910.png" />
+    <Resource Include="BackGround\ItemImage\glowing_sword_demonic__2792070491.png" />
+    <Resource Include="BackGround\ItemImage\glowing_sword_only__3045701784.png" />
+    <Resource Include="BackGround\ItemImage\mountain-and-meadow-ground-png-cartoon-11546973714o9xkmvz6qi.png" />
+    <Resource Include="BackGround\ItemImage\old-medieval-town-gate-bridge-260nw-2204651017.jpeg" />
+    <Resource Include="BackGround\ItemImage\Potion.png" />
+    <Resource Include="BackGround\ItemImage\Potionz.png" />
+    <Resource Include="BackGround\ItemImage\RedSword.jpg" />
+    <Resource Include="BackGround\ItemImage\RedSwordzx.png" />
+    <Resource Include="BackGround\ItemImage\satanic-disguting-greesy-demon-pure-evil-upscaled.jpg" />
+    <Resource Include="BackGround\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled %281%29.jpg" />
+    <Resource Include="BackGround\ItemImage\satanic-scary-disguting-greesy-demon-pure-evil-upscaled.jpg" />
+    <Resource Include="BackGround\ItemImage\satan_angry_demonic_hell_gore_face_eater_3314505710.png" />
+    <Resource Include="BackGround\ItemImage\Screenshot17-1920x1080-5ac104c0c9d47cc31bcd1c1c696cebf9.jpeg" />
+    <Resource Include="BackGround\ItemImage\serpentscale.jpg" />
+    <Resource Include="BackGround\ItemImage\SerpentScale.png" />
+    <Resource Include="BackGround\ItemImage\Serpent_Scale_758471684.png" />
+    <Resource Include="BackGround\ItemImage\sowrdss.jpg" />
+    <Resource Include="BackGround\ItemImage\sowrdssz.jpg" />
+    <Resource Include="BackGround\ItemImage\ssssssssssssssssss.png" />
+    <Resource Include="BackGround\ItemImage\SwordReed.png" />
+    <Resource Include="BackGround\ItemImage\ToxicGland.png" />
+    <Resource Include="BackGround\ItemImage\wierd_small_evil_item_dead__1343190293.png" />
+    <Resource Include="BackGround\ItemImage\wierd_small_evil_item__3517160176 - Copy.png" />
+    <Resource Include="BackGround\ItemImage\wierd_small_evil_item__3517160176.png" />
+    <Resource Include="BackGround\lop.jpg" />
+    <Resource Include="BackGround\natre.jpg" />
+    <Resource Include="BackGround\natues.jpg" />
+    <Resource Include="BackGround\peds.jpg" />
+    <Resource Include="BackGround\pexels-dids-3754600.jpg" />
+    <Resource Include="BackGround\pexels-pixabay-2150.jpg" />
+    <Resource Include="BackGround\pexels-pixabay-235985.jpg" />
+    <Resource Include="BackGround\pexels-pixabay-87009.jpg" />
+    <Resource Include="BackGround\pexels.jpg" />
+    <Resource Include="BackGround\pinkk.jpg" />
+    <Resource Include="BackGround\Potionz.png" />
+    <Resource Include="BackGround\qw.jpg" />
+    <Resource Include="BackGround\qwe.jpg" />
+    <Resource Include="BackGround\RedSwordzx.png" />
+    <Resource Include="BackGround\roar.png" />
+    <Resource Include="BackGround\sataniz.jpg" />
+    <Resource Include="BackGround\SerpentScale.png" />
+    <Resource Include="BackGround\shhh.jpg" />
+    <Resource Include="BackGround\skulz.jpg" />
+    <Resource Include="BackGround\snier.png" />
+    <Resource Include="BackGround\snierr.png" />
+    <Resource Include="BackGround\souef.jpg" />
+    <Resource Include="BackGround\sowrdssz.jpg" />
+    <Resource Include="BackGround\SwordReed.png" />
+    <Resource Include="BackGround\ToxicGland.png" />
+    <Resource Include="BackGround\verycooldemonbac.jpg" />
+    <Resource Include="BackGround\wierd_small_evil_item_dead__1343190293.png" />
+    <Resource Include="BackGround\wierd_small_evil_item__3517160176.png" />
+    <Resource Include="BackGround\sat.jpg" />
+    <Resource Include="BackGround\salt.jpg" />
+    <Resource Include="BackGround\CoolBack.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

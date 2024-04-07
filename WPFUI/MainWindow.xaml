@@ -5,25 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:Engine.ViewModels;assembly=Engine"
         d:DataContext="{d:DesignInstance viewModels:GameSession}"
-        mc:Ignorable="d"
-        FontSize="11pt"
-        Title="Scott's Awesome Game" Height="768" Width="1024">
+      mc:Ignorable="d"
+  FontFamily="Algerian"
+  Title="The Chronicles of Valoria" Height="750" Width="1020">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="225"/>
+            <RowDefinition Height="217"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="258*"/>
-            <ColumnDefinition Width="509*"/>
+            <ColumnDefinition Width ="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
+
         <!-- Menu -->
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" Background="AliceBlue"/>
+        <Label Grid.Row="0" FontWeight="UltraBlack" Grid.Column="0" Content="Menu"  FontSize="38" FontFamily="Elephant"  Canvas.ZIndex="1"  Foreground="DarkBlue" />
+        <Border BorderBrush="DarkRed" BorderThickness="2" Grid.Row="0" Grid.Column="1" />
+        <Border BorderBrush="DarkRed" BorderThickness="5" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
+        <Border BorderBrush="DarkRed" BorderThickness="5" Grid.Row="0" Grid.Column="2" />
+        <Image Grid.Row="0" Grid.Column="2"  Grid.ColumnSpan="1" Source="/sat.jpg"  Stretch="Fill"  Opacity=".9"/>
+        <Image Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="1"  Source="/Background/salt.jpg"  Stretch="Fill"  Opacity=".9" />
+        <Image Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="1"  Source="/sat.jpg" Opacity="0.8" Stretch="Fill" />
         <!-- Player stats -->
         <Grid Grid.Row="1" Grid.Column="0" Background="Cyan" Margin="0,0,0,300">
             <Grid.RowDefinitions>
