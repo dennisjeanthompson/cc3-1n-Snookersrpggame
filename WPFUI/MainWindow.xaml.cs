@@ -21,7 +21,7 @@ namespace WPFUI
         {
             InitializeComponent();
             //ADDED THIS 
-            UpdateSelectedItemImage();
+          //  UpdateSelectedItemImage();
             //END
             _gameSession.OnMessageRaised += OnGameMessageRaised;
             DataContext = _gameSession;
@@ -67,17 +67,18 @@ namespace WPFUI
             Recipe recipe = ((FrameworkElement)sender).DataContext as Recipe;
             _gameSession.CraftItemUsing(recipe);
         }
-
+        /*
         //SOMETHING HERE
         private void ItemComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // Update the image when the selection changes
             UpdateSelectedItemImage();
         }
-
+        */
+        /*
         private void UpdateSelectedItemImage()
         {
-            // Get the selected item from the ComboBox
+          
             ComboBoxItem selectedItem = (ComboBoxItem)itemComboBox.SelectedItem;
 
             if (selectedItem != null)
@@ -88,8 +89,8 @@ namespace WPFUI
                 // Display the corresponding image based on the selected item
                 ShowSelectedItemImage(selectedContent);
             }
-        }
-
+        }*/
+        /*
         private void ShowSelectedItemImage(string selectedItem)
         {
             // Set the image source based on the selected item
@@ -115,7 +116,7 @@ namespace WPFUI
             }
         }
 
-
+        */
 
     }
 }

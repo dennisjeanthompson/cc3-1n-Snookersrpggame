@@ -97,6 +97,7 @@
     <None Include="BackGround\fed.avif" />
     <None Include="BackGround\ItemImage\DawnWoodForeztz.webp-autosave.kra" />
     <None Include="BackGround\ItemImage\firee.webp" />
+    <None Include="Properties\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
