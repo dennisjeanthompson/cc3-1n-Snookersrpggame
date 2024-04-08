@@ -121,8 +121,40 @@ namespace Engine.Models
         }
         public void UseCurrentConsumable()
         {
-            CurrentConsumable.PerformAction(this, this);
-            RemoveItemFromInventory(CurrentConsumable);
+            try
+            {
+                if (CurrentConsumable == null)
+                {
+                    throw new InvalidOperationException("No consumable item selected.");
+                }
+
+                // Ensure the entity has enough consumables
+                if (Inventory.Count(item => item == CurrentConsumable) <= 0)
+                {
+                    throw new InvalidOperationException("No more of this consumable item available.");
+                }
+
+                // Perform the action of the consumable
+                CurrentConsumable.PerformAction(this, this);
+
+                // Remove the consumable from inventory after use
+                RemoveItemFromInventory(CurrentConsumable);
+            }
+            catch (InvalidOperationException ex)
+            {
+                // Log the exception for debugging or error reporting
+                Console.WriteLine($"An error occurred during consumable use: {ex.Message}");
+                // Display an error message to the user
+                RaiseActionPerformedEvent(this, ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Handle any other unexpected exceptions
+                // Log the exception for debugging or error reporting
+                Console.WriteLine($"An unexpected error occurred during consumable use: {ex.Message}");
+                // Display a generic error message to the user
+                RaiseActionPerformedEvent(this, "An unexpected error occurred. Please try again later.");
+            }
         }
         public void TakeDamage(int hitPointsOfDamage)
         {
