@@ -206,5 +206,14 @@
     <Resource Include="BackGround\salt.jpg" />
     <Resource Include="BackGround\CoolBack.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Monsters\Anaconda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Monsters\Centipede.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Monsters\WildBear.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

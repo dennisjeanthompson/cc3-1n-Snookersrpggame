@@ -86,28 +86,29 @@
             <!-- Game Messages -->
             <Border Grid.Row="0" Grid.Column="1"
                     Grid.RowSpan="2"
-                    BorderBrush="Gainsboro"
-                    BorderThickness="1">
+                     BorderBrush="DarkRed" BorderThickness="4" >
                 <RichTextBox x:Name="GameMessages"
-                             Background="Gold"
-                             VerticalScrollBarVisibility="Auto">
+                           
+                             VerticalScrollBarVisibility="Auto" FontWeight="Bold" FontSize="15"  Foreground="Black" HorizontalAlignment="Center">
                     <RichTextBox.Resources>
-                        <Style TargetType="{x:Type Paragraph}">
-                            <Setter Property="Margin" Value="0"/>
+                        <Style TargetType="{x:Type Paragraph}" >
+                            <Setter Property="Margin" Value="0"  />
                         </Style>
                     </RichTextBox.Resources>
                 </RichTextBox>
             </Border>
+            <Image Grid.Row="0" Grid.Column="1" Source="/Background/dope.jpg" Opacity="0.7"  Visibility="Visible" Stretch="Fill" Grid.ColumnSpan="2" Grid.RowSpan="2" Canvas.ZIndex="0"/>
+            <Image Grid.Row="1" Grid.Column="1" Source="/Background/dsa.jpg" Opacity="0.1"  Visibility="Visible" Stretch="Fill" Grid.RowSpan="2" Grid.ColumnSpan="2"  Canvas.ZIndex="0"/>
             <!-- Location information -->
             <Image Source="/Background/bluu.jpg" Grid.Row="0"  Grid.Column="0" Stretch="Fill" Opacity="1"/>
             <Image Source="/Background/snierr.png" Grid.Row="0" Grid.Column="0" Stretch="Fill" Opacity=".1"/>
             <Border Grid.Row="0" Grid.Column="0"
                    
                     BorderThickness="1">
-              
-            
+
+
                 <Grid Margin="3">
-                  
+
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
@@ -242,29 +243,48 @@
 
             <!-- Image control to display selected item's image -->
             <Image x:Name="itemImage" Width="102" Height="102" Grid.Row="2" Grid.Column="1"/>
+            <Grid>
+
+
+                <Image Source="/Background/fde.jpg" Grid.Row="0" Stretch="Fill" Opacity=".9" Margin="0,-18,-18,0" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="-1.092"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-4.481"/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Background/bodiesofdeath.jpg" Stretch="Fill" Opacity=".0" Margin="0,94,33,0"/>
+
+                <Image Source="/Background/sataniz.jpg" Stretch="Fill" Opacity=".9" Margin="0,-36,156,0"/>
+            </Grid>
 
         </StackPanel>
 
 
+
         <Grid Grid.Row="1" Grid.Column="1"
-              Background="Navy" Margin="287,467,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+              Margin="287,467,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
 
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="255" />
+                <ColumnDefinition Width="*" />
 
             </Grid.ColumnDefinitions>
-
-
 
             <!-- Combat Controls -->
             <Grid Grid.Row="0" Grid.Column="0" 
                   HorizontalAlignment="Center"
                   VerticalAlignment="Center"
                   >
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -292,9 +312,10 @@
                         Visibility="{Binding CurrentPlayer.HasConsumable, Converter={StaticResource BooleanToVisibility}}"
                         Content="Use"
                         Click="OnClick_UseCurrentConsumable"/>
+
             </Grid>
             <!-- Movement Controls -->
-            <Grid Grid.Row="0" Grid.Column="1" Background="Coral">
+            <Grid Grid.Row="0" Background="Coral" Grid.ColumnSpan="2" Margin="226,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
@@ -341,7 +362,7 @@
                     <RowDefinition Height="*" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-               
+
                 <TextBlock Grid.Row="0"
                     HorizontalAlignment="Center"
                     Height="Auto"
