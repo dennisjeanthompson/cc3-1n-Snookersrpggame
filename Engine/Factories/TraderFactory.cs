@@ -11,13 +11,37 @@ namespace Engine.Factories
         {
             Trader susan = new Trader("Susan");
             susan.AddItemToInventory(ItemFactory.CreateGameItem(1001));
+
             Trader farmerTed = new Trader("Farmer Ted");
             farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1001));
-            Trader peteTheHerbalist = new Trader("Pete the Herbalist");
-            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1001));
+            Trader peteTheHerbalist = new Trader("Benu");
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1003));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1002));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1004));
             AddTraderToList(susan);
             AddTraderToList(farmerTed);
             AddTraderToList(peteTheHerbalist);
+            /*
+        * 
+        * d  asdaw          
+        * _    BuildWeapon(1002, "Fire Sword", 50, 1, 3);
+           BuildWeapon(1003, "Golden Sword", 100, 2, 8);
+           BuildWeapon(1004, "Demon Sword", 500, 4, 10);
+           BuildWeapon(1005, "Blue Sword", 60, 1, 3);
+           BuildWeapon(1501, "Bear claw", 9999, 80, 100);
+           BuildWeapon(1502, "Centepede Essence", 901, 10, 80);
+           BuildWeapon(1503, "Centepede Eye", 50, 2, 19);
+           BuildHealingItem(2001, "Satanic Potion", 51, 29);
+           BuildMiscellaneousItem(3001, "Crook", 31);
+           BuildMiscellaneousItem(3002, "Honey", 23);
+           BuildMiscellaneousItem(3003, "Raisins", 25);
+           BuildMiscellaneousItem(9001, "Serpent Scale", 129);
+           BuildMiscellaneousItem(9002, "Toxic Gland", 223);
+           BuildMiscellaneousItem(9003, "Centepede Essence", 113);
+           BuildMiscellaneousItem(9004, "Centepede Eye", 233);
+           BuildMiscellaneousItem(9005, "Bear Claw", 2909);
+           BuildMiscellaneousItem(9006, "Bear Gallblader", 999);
+        */
         }
         public static Trader GetTraderByName(string name)
         {
