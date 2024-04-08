@@ -9,14 +9,14 @@ namespace Engine.Factories
         private static readonly List<GameItem> _standardGameItems = new List<GameItem>();
         static ItemFactory()
         {
-            BuildWeapon(1001, "Red Sword", 14, 22, 2);
-            BuildWeapon(1002, "Fire Sword", 50, 1, 3);
-            BuildWeapon(1003, "Golden Sword", 100, 2, 8);
-            BuildWeapon(1004, "Demon Sword", 500, 4, 10);
-            BuildWeapon(1005, "Blue Sword", 60, 1, 3);
+            BuildWeapon(1001, "Red Sword", 14, 2, 5);
+            BuildWeapon(1002, "Fire Sword", 50, 4, 8);
+            BuildWeapon(1003, "Golden Sword", 100, 8, 19);
+            BuildWeapon(1004, "Demon Sword", 500, 9, 18);
+            BuildWeapon(1005, "Blue Sword", 60, 10, 30);
             BuildWeapon(1501, "Bear claw", 9999, 80, 100);
-            BuildWeapon(1502, "Centepede Essence", 901, 10, 80);
-            BuildWeapon(1503, "Centepede Eye", 50, 2, 19);
+            BuildWeapon(1502, "Centepede Essence", 901, 2, 4);
+            BuildWeapon(1503, "Centepede Eye", 50, 3, 10);
             BuildHealingItem(2001, "Satanic Potion", 51, 29);
             BuildMiscellaneousItem(3001, "Crook", 31);
             BuildMiscellaneousItem(3002, "Honey", 23);

@@ -15,14 +15,14 @@ namespace Engine.Factories
                 "BenuFarmHouse.jpg");
             newWorld.LocationAt(-1, -1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(3));
             newWorld.LocationAt(-1, -1).TraderHere =
-                TraderFactory.GetTraderByName("Jupiter");
+                TraderFactory.GetTraderByName("Benu");
             newWorld.AddLocation(0, -1, "Home",
                 "This is your home",
                 "Home.jpg");
             newWorld.AddLocation(-1, 0, "Alma Market Shop", "The market shop of Alma. He sells weapons and other items",
                 "AlmaMarketSquare.jpg");
             newWorld.LocationAt(-1, 0).TraderHere =
-                TraderFactory.GetTraderByName("Saturn");
+                TraderFactory.GetTraderByName("Alma");
             newWorld.AddLocation(0, 0, "Eldoria Town Square",
                 "A beautiful town of Eldoria.",
                 "EldoriaTownSquare.png");
@@ -35,7 +35,7 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 1, "Lynx Cabin", "This is shop of Lynx where you can trade, buy items and potions of Lynx",
                 "LynxCabin.png");
             newWorld.LocationAt(0, 1).TraderHere =
-                TraderFactory.GetTraderByName("Venus");
+                TraderFactory.GetTraderByName("Lynx");
             newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
             newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(2));
             newWorld.AddLocation(0, 2, "Grassy Land",

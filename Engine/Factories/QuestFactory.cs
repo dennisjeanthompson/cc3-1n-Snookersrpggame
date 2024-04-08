@@ -11,22 +11,26 @@ namespace Engine.Factories
             // Declare the items need to complete the quest, and its reward items
             List<ItemQuantity> itemsToComplete = new List<ItemQuantity>();
             List<ItemQuantity> rewardItems = new List<ItemQuantity>();
+            List<ItemQuantity> itemsToComplete1 = new List<ItemQuantity>();
+            List<ItemQuantity> rewardItems1 = new List<ItemQuantity>();
+            List<ItemQuantity> itemsTOcOMPLETE2 = new List<ItemQuantity>();
+            List<ItemQuantity> REWARDITEMS2 = new List<ItemQuantity>();
             itemsToComplete.Add(new ItemQuantity(9003, 6));//
             rewardItems.Add(new ItemQuantity(1005, 1));
-            //2
-            itemsToComplete.Add(new ItemQuantity(9005, 3));//bear
-            rewardItems.Add(new ItemQuantity(1004, 1));
-            itemsToComplete.Add(new ItemQuantity(1502, 2));
-            rewardItems.Add(new ItemQuantity(1002, 1));
+            //2 
+            itemsToComplete1.Add(new ItemQuantity(9005, 3));//bear
+            rewardItems1.Add(new ItemQuantity(1004, 1));
+            itemsTOcOMPLETE2.Add(new ItemQuantity(1502, 2));
+            REWARDITEMS2.Add(new ItemQuantity(1002, 1));
             //itemsToComplete.Add(new ItemQuantity(1503, 6));
             //rewardItems.Add(new ItemQuantity(102, 1));
             // Create the quest
             _quests.Add(new Quest(1,
                                   "Essence of the Centipede",
                                   "Quest to collect 2 Centipede essence  located in the Grassy Land",
-                                  itemsToComplete,
+                                  itemsToComplete1,
                                   40, 100,
-                                  rewardItems));
+                                  rewardItems1));
             _quests.Add(new Quest(2,
                              "Eyes of the Grasslands",
                              "Quest to collect 6 Centipede eyes  located in the Grassy Land",
@@ -36,9 +40,9 @@ namespace Engine.Factories
             _quests.Add(new Quest(3,
                              "Bear Claw",
                              "Quest to collect 3 Bear claws located in DawnWood Forest",
-                             itemsToComplete,
+                             itemsTOcOMPLETE2,
                               199, 8000,
-                             rewardItems));
+                             REWARDITEMS2));
 
             /* itemsToComplete.Add(new ItemQuantity(204, 3));
             rewardItems.Add(new ItemQuantity(104, 1));

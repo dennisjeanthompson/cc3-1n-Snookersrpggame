@@ -9,11 +9,11 @@ namespace Engine.Factories
         private static readonly List<Trader> _traders = new List<Trader>();
         static TraderFactory()
         {
-            Trader susan = new Trader("Susan");
-            susan.AddItemToInventory(ItemFactory.CreateGameItem(1001));
+            Trader susan = new Trader("Alma");
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1004));
 
-            Trader farmerTed = new Trader("Farmer Ted");
-            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1001));
+            Trader farmerTed = new Trader("Lynx");
+            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1003));
             Trader peteTheHerbalist = new Trader("Benu");
             peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1003));
             peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1002));
