@@ -9,7 +9,7 @@ namespace Engine.Factories
         private static readonly List<GameItem> _standardGameItems = new List<GameItem>();
         static ItemFactory()
         {
-            BuildWeapon(1001, "Red Sword", 1, 1, 2);
+            BuildWeapon(1001, "Red Sword", 14, 22, 2);
             BuildWeapon(1002, "Fire Sword", 50, 1, 3);
             BuildWeapon(1003, "Golden Sword", 100, 2, 8);
             BuildWeapon(1004, "Demon Sword", 500, 4, 10);
