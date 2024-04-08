@@ -322,23 +322,27 @@
             </Grid>
         </Grid>
         <Grid Grid.Row="3" Grid.Column="2">
+            
+            <Grid>
 
 
 
-
-          
-             
 
                 <!-- Combat Controls -->
               
             
        
             <!-- Movement Controls -->
-            <Label Grid.Row="0" Grid.Column="2"   BorderBrush="DarkRed" BorderThickness="4"/>
-            <Image Grid.Row="0" Grid.Column="2" Source="/Background/qwe.jpg" Opacity="0.6" Stretch="Fill"/>
+           
+          
+            </Grid>
             <Grid Grid.Row="0" Background="Coral" Grid.Column="2">
+                <Label Grid.Row="0" Grid.Column="1"   BorderBrush="DarkRed" BorderThickness="4"/>
+                <Image Grid.Row="0" Grid.Column="2" Source="/Background/qwe.jpg" Opacity="0.6" Stretch="Fill"/>
 
-                <Grid.RowDefinitions>
+                <Grid>
+                  
+                    <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
@@ -373,6 +377,7 @@
                         Click="OnClick_MoveSouth"
                         Visibility="{Binding HasLocationToSouth, Converter={StaticResource BooleanToVisibility}}"
                         Content="South"  FontWeight="UltraBold" Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DarkBlue" BorderThickness="3"/>
+            </Grid>
             </Grid>
         </Grid>
         <Border Grid.Row="1"
