@@ -175,9 +175,9 @@
         <Grid Grid.Row="2" Grid.Column="0"
               Background="ForestGreen">
             <TabControl>
-                <TabItem Header="Inventory">
+                <TabItem Header="Inventory" >
                     <DataGrid ItemsSource="{Binding CurrentPlayer.GroupedInventory}"
-                              AutoGenerateColumns="False"
+                              AutoGenerateColumns="False"  
                               HeadersVisibility="Column"
                                Background="ForestGreen">
                         <DataGrid.Columns>
@@ -199,7 +199,7 @@
                               AutoGenerateColumns="False"
                               HeadersVisibility="Column">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Name"
+                            <DataGridTextColumn Header="Name" 
                                                 Binding="{Binding PlayerQuest.Name}"
                                                 Width="*"/>
                             <DataGridTextColumn Header="Done?"
