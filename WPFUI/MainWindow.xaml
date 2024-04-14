@@ -265,11 +265,11 @@
                 <ColumnDefinition Width="10"/>
                 <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
-            <ComboBox Grid.Row="0" Grid.Column="0"
+                <ComboBox x:Name="ItemComboBox" Grid.Row="0" Grid.Column="0"
               Visibility="{Binding HasMonster, Converter={StaticResource BooleanToVisibility}}"
               ItemsSource="{Binding CurrentPlayer.Weapons}"
               SelectedItem="{Binding CurrentPlayer.CurrentWeapon}"
-              DisplayMemberPath="Name"/>
+              DisplayMemberPath="Name" SelectionChanged="WeaponComboBox_SelectionChanged"/>
             <Button Grid.Row="0" Grid.Column="2"
             Visibility="{Binding HasMonster, Converter={StaticResource BooleanToVisibility}}"
             Content="Use"
@@ -319,13 +319,10 @@
             <Grid>
 
 
-                <Image Source="/Background/fde.jpg" Grid.Row="0" Stretch="Fill" Opacity=".9"  >
-                   
-                </Image>
-                <Image Source="/Background/bodiesofdeath.jpg" Stretch="Fill" Opacity=".0" />
-
-                <Image Source="/Background/sataniz.jpg" Stretch="Fill" Opacity=".9" />
-            </Grid>
+                    <Image x:Name="SelectedItemImage" Grid.Row="0" Grid.Column="0" 
+           HorizontalAlignment="Center" VerticalAlignment="Center"
+           Stretch="Uniform" />
+                </Grid>
 
        
             </Grid>

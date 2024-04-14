@@ -9,24 +9,24 @@ namespace Engine.Factories
         private static readonly List<GameItem> _standardGameItems = new List<GameItem>();
         static ItemFactory()
         {
-            BuildWeapon(1001, "Red Sword", 14, 2, 5);
-            BuildWeapon(1002, "Fire Sword", 50, 4, 8);
-            BuildWeapon(1003, "Golden Sword", 100, 8, 19);
-            BuildWeapon(1004, "Demon Sword", 500, 9, 18);
-            BuildWeapon(1005, "Blue Sword", 60, 10, 30);
-            BuildWeapon(1501, "Bear claw", 9999, 80, 100);
-            BuildWeapon(1502, "Centepede Essence", 901, 2, 4);
-            BuildWeapon(1503, "Centepede Eye", 50, 3, 10);
-            BuildHealingItem(2001, "Satanic Potion", 51, 29);
-            BuildMiscellaneousItem(3001, "Crook", 31);
-            BuildMiscellaneousItem(3002, "Honey", 23);
-            BuildMiscellaneousItem(3003, "Raisins", 25);
-            BuildMiscellaneousItem(9001, "Serpent Scale", 129);
-            BuildMiscellaneousItem(9002, "Toxic Gland", 223);
-            BuildMiscellaneousItem(9003, "Centepede Essence", 113);
-            BuildMiscellaneousItem(9004, "Centepede Eye", 233);
-            BuildMiscellaneousItem(9005, "Bear Claw", 2909);
-            BuildMiscellaneousItem(9006, "Bear Gallblader", 999);
+            BuildWeapon(1001, "Red Sword", "/Background/RedSwordzx.png", 14, 2, 5);
+            BuildWeapon(1002, "Fire Sword","", 50, 4, 8);
+            BuildWeapon(1003, "Golden Sword", "", 100, 8, 19);
+            BuildWeapon(1004, "Demon Sword", "", 500, 9, 18);
+            BuildWeapon(1005, "Blue Sword", "", 60, 10, 30);
+            BuildWeapon(1501, "Bear claw", "", 9999, 80, 100);
+            BuildWeapon(1502, "Centepede Essence", "", 901, 2, 4);
+            BuildWeapon(1503, "Centepede Eye", "", 50, 3, 10);
+            BuildHealingItem(2001, "Satanic Potion", "", 51, 29);
+            BuildMiscellaneousItem(3001, "Crook", "", 31);
+            BuildMiscellaneousItem(3002, "Honey", "", 23);
+            BuildMiscellaneousItem(3003, "Raisins", "", 25);
+            BuildMiscellaneousItem(9001, "Serpent Scale", "", 129);
+            BuildMiscellaneousItem(9002, "Toxic Gland", "", 223);
+            BuildMiscellaneousItem(9003, "Centepede Essence", "", 113);
+            BuildMiscellaneousItem(9004, "Centepede Eye", "", 233);
+            BuildMiscellaneousItem(9005, "Bear Claw", "", 2909);
+            BuildMiscellaneousItem(9006, "Bear Gallblader","", 999);
         }
 
         /*
@@ -67,20 +67,20 @@ namespace Engine.Factories
         {
             return _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID)?.Clone();
         }
-        private static void BuildMiscellaneousItem(int id, string name, int price)
+        private static void BuildMiscellaneousItem(int id, string name,string imagePath, int price)
         {
-            _standardGameItems.Add(new GameItem(GameItem.ItemCategory.Miscellaneous, id, name, price));
+            _standardGameItems.Add(new GameItem(GameItem.ItemCategory.Miscellaneous, id, name,imagePath, price));
         }
-        private static void BuildWeapon(int id, string name, int price,
+        private static void BuildWeapon(int id, string name,string imagePath ,int price,
                                         int minimumDamage, int maximumDamage)
         {
-            GameItem weapon = new GameItem(GameItem.ItemCategory.Weapon, id, name, price, true);
+            GameItem weapon = new GameItem(GameItem.ItemCategory.Weapon, id, name,imagePath, price, true);
             weapon.Action = new AttackWithWeapon(weapon, minimumDamage, maximumDamage);
             _standardGameItems.Add(weapon);
         }
-        private static void BuildHealingItem(int id, string name, int price, int hitPointsToHeal)
+        private static void BuildHealingItem(int id, string name,string imagePath, int price, int hitPointsToHeal)
         {
-            GameItem item = new GameItem(GameItem.ItemCategory.Consumable, id, name, price);
+            GameItem item = new GameItem(GameItem.ItemCategory.Consumable, id, name,imagePath, price);
             item.Action = new Heal(item, hitPointsToHeal);
             _standardGameItems.Add(item);
         }

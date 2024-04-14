@@ -9,15 +9,17 @@ namespace Engine.Models
             Weapon,
             Consumable
         }
+        public string ImagePath { get; set; }
         public ItemCategory Category { get; }
         public int ItemTypeID { get; }
         public string Name { get; }
         public int Price { get; }
         public bool IsUnique { get; }
         public IAction Action { get; set; }
-        public GameItem(ItemCategory category, int itemTypeID, string name, int price,
+        public GameItem(ItemCategory category, int itemTypeID, string name,string imagePath, int price,
                         bool isUnique = false, IAction action = null)
         {
+            ImagePath = imagePath;  
             Category = category;
             ItemTypeID = itemTypeID;
             Name = name;
@@ -31,7 +33,12 @@ namespace Engine.Models
         }
         public GameItem Clone()
         {
-            return new GameItem(Category, ItemTypeID, Name, Price, IsUnique, Action);
+            return new GameItem(Category, ItemTypeID, Name,ImagePath, Price, IsUnique, Action);
         }
+       
+            
+            // Other properties...
+        
+
     }
 }

@@ -26,6 +26,30 @@ namespace WPFUI
             _gameSession.OnMessageRaised += OnGameMessageRaised;
             DataContext = _gameSession;
         }
+
+        private void WeaponComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Get the selected item from the ComboBox
+            GameItem selectedItem = (GameItem)ItemComboBox.SelectedItem;
+
+            // Check if an item is selected
+            if (selectedItem != null)
+            {
+                // Update the image source in the other grid with the selected item's image source
+                SelectedItemImage.Source = new BitmapImage(new Uri(selectedItem.ImagePath, UriKind.RelativeOrAbsolute));
+
+                // Make the image visible
+                SelectedItemImage.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                // Hide the image if no item is selected
+                SelectedItemImage.Visibility = Visibility.Collapsed;
+            }
+        }
+
+
+
         private void OnClick_MoveNorth(object sender, RoutedEventArgs e)
         {
             _gameSession.MoveNorth();
