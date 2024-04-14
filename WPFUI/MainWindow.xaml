@@ -318,6 +318,11 @@
           
             <Grid>
 
+                    <Image Source="Background/heat.jpg" Opacity="0.3"/>
+                    <Image Source="Background/verycooldemonbac.jpg" Opacity="0.5" Stretch="Fill"/>
+                    <Image Source="Background/2demonfacebac.jpg" Opacity="0.4" Stretch="Fill"/>
+
+
 
                     <Image x:Name="SelectedItemImage" Grid.Row="0" Grid.Column="0" 
            HorizontalAlignment="Center" VerticalAlignment="Center"
