@@ -274,11 +274,11 @@
             Visibility="{Binding HasMonster, Converter={StaticResource BooleanToVisibility}}"
             Content="Use"
             Click="OnClick_AttackMonster"/>
-            <ComboBox Grid.Row="1" Grid.Column="0"
+                <ComboBox x:Name="ConsumableComboBox" Grid.Row="1" Grid.Column="0"
               Visibility="{Binding CurrentPlayer.HasConsumable, Converter={StaticResource BooleanToVisibility}}"
               ItemsSource="{Binding CurrentPlayer.Consumables}"
-              SelectedItem="{Binding CurrentPlayer.CurrentConsumable}"
-              DisplayMemberPath="Name"/>
+              SelectedItem="{Binding CurrentPlayer.CurrentConsumable}" 
+              DisplayMemberPath="Name" SelectionChanged="ConsumableComboBox_SelectionChanged"/>
             <Button Grid.Row="1" Grid.Column="2"
             Visibility="{Binding CurrentPlayer.HasConsumable, Converter={StaticResource BooleanToVisibility}}"
             Content="Use"

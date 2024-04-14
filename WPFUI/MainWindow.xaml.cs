@@ -48,6 +48,27 @@ namespace WPFUI
             }
         }
 
+        private void ConsumableComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Get the selected consumable from the ComboBox
+            GameItem selectedConsumable = (GameItem)ConsumableComboBox.SelectedItem;
+
+            // Check if a consumable is selected
+            if (selectedConsumable != null)
+            {
+                // Update the image source in the other grid with the selected item's image source
+                SelectedItemImage.Source = new BitmapImage(new Uri(selectedConsumable.ImagePath, UriKind.RelativeOrAbsolute));
+
+                // Make the image visible
+                SelectedItemImage.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                // Hide the image if no item is selected
+                SelectedItemImage.Visibility = Visibility.Collapsed;
+            }
+        }
+
 
 
         private void OnClick_MoveNorth(object sender, RoutedEventArgs e)

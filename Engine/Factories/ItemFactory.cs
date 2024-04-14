@@ -10,23 +10,23 @@ namespace Engine.Factories
         static ItemFactory()
         {
             BuildWeapon(1001, "Red Sword", "/Background/RedSwordzx.png", 14, 2, 5);
-            BuildWeapon(1002, "Fire Sword","", 50, 4, 8);
-            BuildWeapon(1003, "Golden Sword", "", 100, 8, 19);
-            BuildWeapon(1004, "Demon Sword", "", 500, 9, 18);
-            BuildWeapon(1005, "Blue Sword", "", 60, 10, 30);
-            BuildWeapon(1501, "Bear claw", "", 9999, 80, 100);
-            BuildWeapon(1502, "Centepede Essence", "", 901, 2, 4);
-            BuildWeapon(1503, "Centepede Eye", "", 50, 3, 10);
-            BuildHealingItem(2001, "Satanic Potion", "", 51, 29);
+            BuildWeapon(1002, "Fire Sword", "/Background/fireezzz.png", 50, 4, 8);
+            BuildWeapon(1003, "Golden Sword", "/Background/sowrdssz.jpg", 100, 8, 19);
+            BuildWeapon(1004, "Demon Sword", "/Background/SwordReed.png", 500, 9, 18);
+            BuildWeapon(1005, "Blue Sword", "/Background/glowing_sword_only__3045701784.png", 60, 10, 30);
+            BuildWeapon(1501, "Bear claw", "/Background/BeareClawz.png", 9999, 80, 100);
+            BuildWeapon(1502, "Centepede Essence", "/Background/CentepedeEssence.jpg", 901, 2, 4);
+            BuildWeapon(1503, "Centepede Eye", "/Background/EYEcentepede.jpg", 50, 3, 10);
+            BuildHealingItem(2001, "Satanic Potion", "/Background/Potionz.png", 51, 29);
             BuildMiscellaneousItem(3001, "Crook", "", 31);
             BuildMiscellaneousItem(3002, "Honey", "", 23);
             BuildMiscellaneousItem(3003, "Raisins", "", 25);
-            BuildMiscellaneousItem(9001, "Serpent Scale", "", 129);
-            BuildMiscellaneousItem(9002, "Toxic Gland", "", 223);
-            BuildMiscellaneousItem(9003, "Centepede Essence", "", 113);
-            BuildMiscellaneousItem(9004, "Centepede Eye", "", 233);
-            BuildMiscellaneousItem(9005, "Bear Claw", "", 2909);
-            BuildMiscellaneousItem(9006, "Bear Gallblader","", 999);
+            BuildMiscellaneousItem(9001, "Serpent Scale", "/Background/SerpentScale.png", 129);
+            BuildMiscellaneousItem(9002, "Toxic Gland", "/Background/ToxicGland.png", 223);
+            BuildMiscellaneousItem(9003, "Centepede Essence", "Background/CentepedeEssence.jpg", 113);
+            BuildMiscellaneousItem(9004, "Centepede Eye", "Background/EYEcentepede.jpg", 233);
+            BuildMiscellaneousItem(9005, "Bear Claw", "/Background/BeareClawz.png", 2909);
+            BuildMiscellaneousItem(9006, "Bear Gallblader", "/Background/BearGallblader.png", 999);
         }
 
         /*
