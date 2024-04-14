@@ -173,13 +173,16 @@
         </Grid>
         <!-- Inventory and Quests -->
         <Grid Grid.Row="2" Grid.Column="0"
-              Background="ForestGreen">
+              >
+            <Label BorderBrush="DarkRed" BorderThickness="4" Grid.Column="0" Grid.Row="2"/>
+            <Image Source="/Background/demonloverface.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"   Opacity="0.9" />
             <TabControl>
                 <TabItem Header="Inventory" >
                     <DataGrid ItemsSource="{Binding CurrentPlayer.GroupedInventory}"
                               AutoGenerateColumns="False"  
                               HeadersVisibility="Column"
-                               Background="ForestGreen">
+                               >
+                       
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Description"
                                                 Binding="{Binding Item.Name}"
@@ -245,13 +248,15 @@
                 <ColumnDefinition Width="*"/>
 
                 <ColumnDefinition/>
-
+                <!--`Canvas.ZIndex="1" -->
             </Grid.ColumnDefinitions>
 
 
-            <Label Grid.Row="2" Grid.Column="2" Background="DarkGoldenrod"  Grid.RowSpan="2"/>
-
-        <Grid Grid.Row="2" Grid.Column="2" 
+            <Label Grid.Row="2" Grid.Column="2"  BorderBrush="DarkRed" BorderThickness="4"  Grid.RowSpan="2"/>
+            <Label Grid.Row="2" Grid.Column="2" BorderBrush="DarkRed" BorderThickness="4" FontSize="19" FontWeight="DemiBold" Foreground="Red"/>
+            <Image Grid.Row="2" Grid.Column="2" Source="/Background/colz.jpg" Stretch="Fill" Opacity="1"/>
+            <Image Grid.Row="2" Grid.Column="2" Source="/Background/lop.jpg" Stretch="Fill" Opacity=".1"/>
+            <Grid Grid.Row="2" Grid.Column="2" 
       HorizontalAlignment="Center"
       VerticalAlignment="Center"
       >
@@ -316,11 +321,12 @@
 
             <!-- Image control to display selected item's image -->
           
-            <Grid>
+            <Grid >
+                    <Label  BorderBrush="DarkRed" BorderThickness="4"/>
 
-                    <Image Source="Background/heat.jpg" Opacity="0.3"/>
-                    <Image Source="Background/verycooldemonbac.jpg" Opacity="0.5" Stretch="Fill"/>
-                    <Image Source="Background/2demonfacebac.jpg" Opacity="0.4" Stretch="Fill"/>
+                    <Image Source="Background/heat.jpg" Opacity="0.3"  Canvas.ZIndex="0" />
+                    <Image Source="Background/verycooldemonbac.jpg" Opacity="0.5" Stretch="Fill"  Canvas.ZIndex="0" />
+                    <Image Source="Background/2demonfacebac.jpg" Opacity="0.4" Stretch="Fill"  Canvas.ZIndex="0" />
 
 
 

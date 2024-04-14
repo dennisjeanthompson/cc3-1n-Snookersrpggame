@@ -112,56 +112,7 @@ namespace WPFUI
             Recipe recipe = ((FrameworkElement)sender).DataContext as Recipe;
             _gameSession.CraftItemUsing(recipe);
         }
-        /*
-        //SOMETHING HERE
-        private void ItemComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            // Update the image when the selection changes
-            UpdateSelectedItemImage();
-        }
-        */
-        /*
-        private void UpdateSelectedItemImage()
-        {
-          
-            ComboBoxItem selectedItem = (ComboBoxItem)itemComboBox.SelectedItem;
-
-            if (selectedItem != null)
-            {
-                // Get the content (text) of the selected item
-                string selectedContent = selectedItem.Content.ToString();
-
-                // Display the corresponding image based on the selected item
-                ShowSelectedItemImage(selectedContent);
-            }
-        }*/
-        /*
-        private void ShowSelectedItemImage(string selectedItem)
-        {
-            // Set the image source based on the selected item
-            switch (selectedItem)
-            {
-                case "Iron Sword":
-                    itemImage.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("pack://application:,,,/Potion.jpg"));
-                    break;
-
-                case "Potion":
-                    itemImage.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("pack://application:,,,/Potion.jpg"));
-                    break;
-                case "car":
-                    itemImage.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("pack://application:,,,/GoldenSword.png"));
-                    break;
-
-                // Add more cases for additional items
-
-                default:
-                    // Default case if the selected item is not recognized
-                    itemImage.Source = null;
-                    break;
-            }
-        }
-
-        */
+       
 
     }
 }
