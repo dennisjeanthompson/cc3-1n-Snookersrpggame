@@ -20,7 +20,10 @@ namespace Engine.Factories
             Trader farmerTed = new Trader("Lynx");
             farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2001));//potions
             farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2002));
-           // farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1003));
+
+            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2004));
+            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2005));
+            // farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1003));
             //farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2002));
 
             Trader peteTheHerbalist = new Trader("Benu");

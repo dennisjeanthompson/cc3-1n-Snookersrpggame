@@ -28,6 +28,11 @@ namespace Engine.Factories
             BuildHealingItem(2001, "Satanic Potion", "/Background/Potionz.png", 510, 29);
             BuildHealingItem(2002, "Blood of Satan", "/Background/bottleblood.jpg", 1000, 50);
             BuildHealingItem(2003, "Centepede Juice", "/CharacterImage/greenpotion.png", 390, 10);
+            //
+            //
+            BuildHealingItem(2004, "Violet Potion", "/CharacterImage/PorionGreen.png", 121, 10);
+            BuildHealingItem(2005, "Angel Potion", "/CharacterImage/VioletPotion.jpg", 200, 20);
+
             BuildHealingItem(2004, "Summon Satan", "/BackGround/kingDemon.jpg", 9999, 9999);
             //king demon
 
