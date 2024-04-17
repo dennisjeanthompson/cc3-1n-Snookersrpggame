@@ -17,8 +17,8 @@ namespace Engine.Models
         public string ImagePath { get; set; }
         public ItemCategory Category { get; set; } // Add setter for Category
         public int ItemTypeID { get; }
-        public string Name { get; }
-        public int Price { get; }
+        public string Name { get; set; }
+        public int Price { get; set; }
         public bool IsUnique { get; }
         public IAction Action { get; set; }
 
