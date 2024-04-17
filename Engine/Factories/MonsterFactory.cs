@@ -10,21 +10,21 @@ namespace Engine.Factories
             {
                 case 1:
                     Monster snake =
-                        new Monster("Anaconda", "Anaconda2.jpg", 1, 2, 11, 10);
+                        new Monster("Anaconda", "Anaconda2.jpg", 20, 40, 11, 19);
                     snake.CurrentWeapon = ItemFactory.CreateGameItem(1501);
                     AddLootItem(snake, 9001, 25);
                     AddLootItem(snake, 9002, 75);
                     return snake;
                 case 2:
                     Monster rat =
-                        new Monster("Centipede", "Centipede.png", 20, 50, 50, 1000);
+                        new Monster("Centipede", "Centipede.png", 20,39, 399, 1000);
                     rat.CurrentWeapon = ItemFactory.CreateGameItem(1502);
                     AddLootItem(rat, 9003, 25);
                     AddLootItem(rat, 9004, 75);
                     return rat;
                 case 3:
                     Monster giantSpider =
-                        new Monster("Wild Bear", "WildBear.png", 10, 29, 100, 9999);
+                        new Monster("Wild Bear", "WildBear.png", 10, 99, 909, 9999);
                     giantSpider.CurrentWeapon = ItemFactory.CreateGameItem(1503);
                     AddLootItem(giantSpider, 9005, 25);
                     AddLootItem(giantSpider, 9006, 75);
