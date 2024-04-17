@@ -228,5 +228,29 @@
   <ItemGroup>
     <Resource Include="BackGround\raisins.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\AminoSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\ChainSwrd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\CharacterWarrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\greenP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\greenpotion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\GreensW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\PorionGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterImage\VioletPotion.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

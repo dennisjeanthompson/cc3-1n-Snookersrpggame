@@ -11,7 +11,7 @@ namespace Engine.Factories
                 "BenuFarmField.jpg");
             newWorld.LocationAt(-2, -1).AddMonster(2, 100);
             newWorld.AddLocation(-1, -1, "Benu Farm House",
-                "This is your neighbour's house  named Benu . Benu likes children, Farmer Ted.",
+                "This is your neighbour's house  named Benu . Benu sells ingredients for crafting different kinds of items.",
                 "BenuFarmHouse.jpg");
             newWorld.LocationAt(-1, -1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(3));
             newWorld.LocationAt(-1, -1).TraderHere =
@@ -41,7 +41,7 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 2, "Grassy Land",
                 "There are many plants here, with snakes hiding behind them.",
                 "GrassyLand.png");
-            newWorld.LocationAt(0, 2).AddMonster(1, 100);
+            newWorld.LocationAt(0, 2).AddMonster(4, 100);
             return newWorld;
             /*
              * 

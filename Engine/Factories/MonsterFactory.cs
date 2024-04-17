@@ -10,7 +10,7 @@ namespace Engine.Factories
             {
                 case 1:
                     Monster snake =
-                        new Monster("Anaconda", "Anaconda2.jpg", 20, 40, 11, 19);
+                        new Monster("Anaconda", "Anaconda2.jpg", 10, 30, 11, 19);
                     snake.CurrentWeapon = ItemFactory.CreateGameItem(1501);
                     AddLootItem(snake, 9001, 25);
                     AddLootItem(snake, 9002, 75);
@@ -29,6 +29,21 @@ namespace Engine.Factories
                     AddLootItem(giantSpider, 9005, 25);
                     AddLootItem(giantSpider, 9006, 75);
                     return giantSpider;
+
+
+                case 4:
+                    Monster snake1 =
+                        new Monster("Anaconda", "Anaconda2.jpg", 10, 30, 11, 19);
+                    snake1.CurrentWeapon = ItemFactory.CreateGameItem(1501);
+                    AddLootItem(snake1, 9001, 25);
+                    AddLootItem(snake1, 9002, 75);
+                    return snake1;
+
+
+
+
+
+
                 default:
                     throw new ArgumentException(string.Format("MonsterType '{0}' does not exist", monsterID));
             }

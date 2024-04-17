@@ -102,6 +102,13 @@
     <Content Include="BackGround\bodiesofdeath.jpg" />
     <Content Include="BackGround\CentepedeEssence.jpg" />
     <Content Include="BackGround\colz.jpg" />
+    <Resource Include="Images\CharacterImage\greenP.png" />
+    <Resource Include="Images\CharacterImage\AminoSword.jpg" />
+    <Resource Include="Images\CharacterImage\ChainSwrd.jpg" />
+    <Resource Include="Images\CharacterImage\greenpotion.png" />
+    <Resource Include="Images\CharacterImage\GreensW.jpg" />
+    <Resource Include="Images\CharacterImage\PorionGreen.png" />
+    <Resource Include="Images\CharacterImage\VioletPotion.jpg" />
     <Resource Include="Images\Monsters\Anaconda2.jpg" />
     <Resource Include="Images\Monsters\Anaconda1.jpg" />
     <Resource Include="sat.jpg" />

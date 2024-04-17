@@ -17,21 +17,46 @@ namespace Engine.Factories
             BuildWeapon(1501, "Bear claw", "/Background/BeareClawz.png", 9999, 80, 100);
             BuildWeapon(1502, "Centepede Essence", "/Background/CentepedeEssence.jpg", 901, 2, 4);
             BuildWeapon(1503, "Centepede Eye", "/Background/EYEcentepede.jpg", 50, 3, 10);
-          //  BuildWeapon(1504, "Blood of Satan", "/Background/bottleblood.jpg", 50, 0, 0);//
+            //  BuildWeapon(1504, "Blood of Satan", "/Background/bottleblood.jpg", 50, 0, 0);//
+
+            //Elixir of Resilience
+            BuildHealingItem(2001, "Satanic Potion", "/Background/Potionz.png", 510, 29);
+            BuildHealingItem(2002, "Blood of Satan", "/Background/bottleblood.jpg", 1000, 50);
+            BuildHealingItem(2003, "Centepede Juice", "/CharacterImage/greenpotion.png", 390, 10);
 
 
-            BuildHealingItem(2001, "Satanic Potion", "/Background/Potionz.png", 51, 29);
-            BuildHealingItem(2002, "Blood of Satan", "/Background/bottleblood.jpg", 100, 50);
+
 
             BuildMiscellaneousItem(3001, "Blood of Satan", "/Background/bottleblood.jpg", 31);
             BuildMiscellaneousItem(3002, "Honey", "", 23);
             BuildMiscellaneousItem(3003, "Raisins", "", 25);
+
+            BuildMiscellaneousItem(3004, "Rat feet", "", 5000);
+            BuildMiscellaneousItem(3005, "Rat skin", "", 1000);
+            BuildMiscellaneousItem(3006, "Rat feces", "", 999);
+
+
+
+
+
+
+
+
+
+
+
             BuildMiscellaneousItem(9001, "Serpent Scale", "/Background/SerpentScale.png", 129);
             BuildMiscellaneousItem(9002, "Toxic Gland", "/Background/ToxicGland.png", 223);
             BuildMiscellaneousItem(9003, "Centepede Essence", "Background/CentepedeEssence.jpg", 113);
             BuildMiscellaneousItem(9004, "Centepede Eye", "Background/EYEcentepede.jpg", 233);
             BuildMiscellaneousItem(9005, "Bear Claw", "/Background/BeareClawz.png", 2909);
             BuildMiscellaneousItem(9006, "Bear Gallblader", "/Background/BearGallblader.png", 999);
+
+            BuildMiscellaneousItem(3007, "Iron", "/Background/BearGallblader.png", 100);
+            BuildMiscellaneousItem(3008, "Metal", "/Background/BearGallblader.png", 999);
+            BuildMiscellaneousItem(3009, "Grip", "/Background/BearGallblader.png", 999);
+
+
         }
 
         /*

@@ -9,7 +9,7 @@ namespace Engine.Models
 
         public enum ItemCategory
         {
-            Miscellaneous,
+            Miscellaneous, 
             Weapon,
             Consumable
         }
