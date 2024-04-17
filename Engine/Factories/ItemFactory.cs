@@ -14,6 +14,11 @@ namespace Engine.Factories
             BuildWeapon(1003, "Golden Sword", "/Background/sowrdssz.jpg", 100, 8, 19);
             BuildWeapon(1004, "Demon Sword", "/Background/SwordReed.png", 500, 9, 18);
             BuildWeapon(1005, "Blue Sword", "/Background/glowing_sword_only__3045701784.png", 60, 10, 30);
+
+            BuildWeapon(1006, "Chain Sword", "/CharacterImage/ChainSwrd.jpg", 4669, 14, 39);
+            BuildWeapon(1007, "Amino Sword", "/CharacterImage/AminoSword.jpg", 6000, 16, 42);
+            BuildWeapon(1008, "Albino Sword", "/CharacterImage/GreensW.jpg", 6091, 18, 40);
+
             BuildWeapon(1501, "Bear claw", "/Background/BeareClawz.png", 9999, 80, 100);
             BuildWeapon(1502, "Centepede Essence", "/Background/CentepedeEssence.jpg", 901, 2, 4);
             BuildWeapon(1503, "Centepede Eye", "/Background/EYEcentepede.jpg", 50, 3, 10);
@@ -28,9 +33,9 @@ namespace Engine.Factories
 
 
 
-            BuildMiscellaneousItem(3001, "Blood of Satan", "/Background/bottleblood.jpg", 31);
-            BuildMiscellaneousItem(3002, "Honey", "", 23);
-            BuildMiscellaneousItem(3003, "Raisins", "", 25);
+            BuildMiscellaneousItem(3001, "Egg ", "/Background/bottleblood.jpg", 31);
+            BuildMiscellaneousItem(3002, "Tongue", "", 23);
+            BuildMiscellaneousItem(3003, "Coke", "", 25);
 
             BuildMiscellaneousItem(3004, "Rat feet", "", 5000);
             BuildMiscellaneousItem(3005, "Rat skin", "", 1000);

@@ -14,6 +14,9 @@ namespace Engine.Factories
             susan.AddItemToInventory(ItemFactory.CreateGameItem(1003));
             susan.AddItemToInventory(ItemFactory.CreateGameItem(1004));
             susan.AddItemToInventory(ItemFactory.CreateGameItem(1005));
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1006));
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1007));
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1008));
             Trader farmerTed = new Trader("Lynx");
             farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2001));//potions
             farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2002));
