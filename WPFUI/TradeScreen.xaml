@@ -8,6 +8,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
+         FontFamily="Algerian"
         Title="Trade Screen" Height="480" Width="640">
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -24,8 +25,8 @@
 
         <Label Grid.Row="0" Grid.Column="0"
                Grid.ColumnSpan="2"
-               HorizontalAlignment="Center"
-               Content="{Binding CurrentTrader.Name}"/>
+               HorizontalAlignment="Center" FontSize="11" Foreground="OrangeRed" FontFamily="Elephant"
+               Content="{Binding CurrentTrader.Name}"/> 
 
         <Label Grid.Row="1" Grid.Column="0"
                HorizontalAlignment="Center"
@@ -38,21 +39,21 @@
                   Margin="10"
                   ItemsSource="{Binding CurrentPlayer.GroupedInventory}"
                   AutoGenerateColumns="False"
-                  HeadersVisibility="Column"
+                  HeadersVisibility="Column" FontSize="11" Foreground="Red" FontFamily="Elephant"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
                   VerticalScrollBarVisibility="Auto">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Description"
                                     IsReadOnly="True"
-                                    Width="*"
+                                    Width="*"  FontSize="11" Foreground="Red" FontFamily="Elephant"
                                     Binding="{Binding Item.Name}"/>
                 <DataGridTextColumn Header="Qty"
-                                    IsReadOnly="True"
+                                    IsReadOnly="True" FontSize="11" Foreground="Red" FontFamily="Elephant"
                                     Width="Auto"
                                     Binding="{Binding Quantity}"/>
                 <DataGridTextColumn Header="Price"
-                                    IsReadOnly="True"
+                                    IsReadOnly="True" FontSize="11" Foreground="Red" FontFamily="Elephant"
                                     Width="Auto"
                                     Binding="{Binding Item.Price}"/>
                 <DataGridTemplateColumn MinWidth="75">
@@ -76,15 +77,15 @@
                   VerticalScrollBarVisibility="Auto">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Description"
-                                    IsReadOnly="True"
+                                    IsReadOnly="True" FontSize="11" Foreground="Red" FontFamily="Elephant"
                                     Width="*"
                                     Binding="{Binding Item.Name}"/>
                 <DataGridTextColumn Header="Qty"
-                                    IsReadOnly="True"
+                                    IsReadOnly="True" FontSize="11" Foreground="Red" FontFamily="Elephant"
                                     Width="Auto"
                                     Binding="{Binding Quantity}"/>
                 <DataGridTextColumn Header="Price"
-                                    IsReadOnly="True"
+                                    IsReadOnly="True" FontSize="11" Foreground="Red" FontFamily="Elephant"
                                     Width="Auto"
                                     Binding="{Binding Item.Price}"/>
                 <DataGridTemplateColumn MinWidth="75">

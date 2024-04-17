@@ -10,7 +10,7 @@ namespace Engine.Factories
             {
                 case 1:
                     Monster snake =
-                        new Monster("Anaconda", "Anaconda.png", 1, 2, 11, 10);
+                        new Monster("Anaconda", "Anaconda2.jpg", 1, 2, 11, 10);
                     snake.CurrentWeapon = ItemFactory.CreateGameItem(1501);
                     AddLootItem(snake, 9001, 25);
                     AddLootItem(snake, 9002, 75);

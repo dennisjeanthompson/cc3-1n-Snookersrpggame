@@ -216,5 +216,17 @@
   <ItemGroup>
     <Resource Include="Monsters\WildBear.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\ROADtohell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\gatetphell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\bottleblood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\raisins.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

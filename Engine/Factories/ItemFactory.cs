@@ -17,8 +17,13 @@ namespace Engine.Factories
             BuildWeapon(1501, "Bear claw", "/Background/BeareClawz.png", 9999, 80, 100);
             BuildWeapon(1502, "Centepede Essence", "/Background/CentepedeEssence.jpg", 901, 2, 4);
             BuildWeapon(1503, "Centepede Eye", "/Background/EYEcentepede.jpg", 50, 3, 10);
+          //  BuildWeapon(1504, "Blood of Satan", "/Background/bottleblood.jpg", 50, 0, 0);//
+
+
             BuildHealingItem(2001, "Satanic Potion", "/Background/Potionz.png", 51, 29);
-            BuildMiscellaneousItem(3001, "Crook", "", 31);
+            BuildHealingItem(2002, "Blood of Satan", "/Background/bottleblood.jpg", 100, 50);
+
+            BuildMiscellaneousItem(3001, "Blood of Satan", "/Background/bottleblood.jpg", 31);
             BuildMiscellaneousItem(3002, "Honey", "", 23);
             BuildMiscellaneousItem(3003, "Raisins", "", 25);
             BuildMiscellaneousItem(9001, "Serpent Scale", "/Background/SerpentScale.png", 129);
@@ -51,16 +56,6 @@ namespace Engine.Factories
          *   _quests.Add(new Quest(1, "Bear Claw", "Quest to collect 3 Bear claws located in DawnWood Forest.", 10, 80, itemsToComplete, rewardItems));
              _quests.Add(new Quest(2, "Essence of the Centipede", "Quest to collect Centipede essence 2 located in the Grassy Land.", 2, 10, itemsToComplete, rewardItems));
              _quests.Add(new Quest(3, "Eyes of the Grasslands", "Quest to collect 6 Centipede eyes located in the Grassy Land.", 7, 50, itemsToComplete, rewardItems));
-
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
          */
 
         public static GameItem CreateGameItem(int itemTypeID)

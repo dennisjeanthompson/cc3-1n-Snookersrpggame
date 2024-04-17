@@ -10,14 +10,26 @@ namespace Engine.Factories
         static TraderFactory()
         {
             Trader susan = new Trader("Alma");
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1002));//weapons
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1003));
             susan.AddItemToInventory(ItemFactory.CreateGameItem(1004));
-
+            susan.AddItemToInventory(ItemFactory.CreateGameItem(1005));
             Trader farmerTed = new Trader("Lynx");
-            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1003));
+            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2001));//potions
+            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2002));
+           // farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1003));
+            //farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(2002));
+
             Trader peteTheHerbalist = new Trader("Benu");
-            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1003));
-            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1002));
-            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1004));
+         
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3002));//ingrients
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3003));
+           // peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1504));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3001));
+
+
+            // peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1002));
+            //peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1004));
             AddTraderToList(susan);
             AddTraderToList(farmerTed);
             AddTraderToList(peteTheHerbalist);

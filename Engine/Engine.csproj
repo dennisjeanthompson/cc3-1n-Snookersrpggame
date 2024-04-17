@@ -102,6 +102,8 @@
     <Content Include="BackGround\bodiesofdeath.jpg" />
     <Content Include="BackGround\CentepedeEssence.jpg" />
     <Content Include="BackGround\colz.jpg" />
+    <Resource Include="Images\Monsters\Anaconda2.jpg" />
+    <Resource Include="Images\Monsters\Anaconda1.jpg" />
     <Resource Include="sat.jpg" />
     <Resource Include="BackGround\CoolBack.gif" />
     <Content Include="BackGround\dawns.jpg" />
