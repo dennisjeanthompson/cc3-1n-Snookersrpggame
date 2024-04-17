@@ -10,7 +10,8 @@
         FontSize="11pt"
          FontFamily="Algerian"
         Title="Trade Screen" Height="480" Width="640">
-    <Grid Margin="10">
+    
+    <Grid Margin="10" Background="DarkRed">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -26,20 +27,20 @@
         <Label Grid.Row="0" Grid.Column="0"
                Grid.ColumnSpan="2"
                HorizontalAlignment="Center" FontSize="11" Foreground="OrangeRed" FontFamily="Elephant"
-               Content="{Binding CurrentTrader.Name}"/> 
+               Content="{Binding CurrentTrader.Name}"/>
 
-        <Label Grid.Row="1" Grid.Column="0"
+        <Label Grid.Row="1" Grid.Column="0" FontSize="14" Foreground="DarkGoldenrod" FontFamily="Elephant"
                HorizontalAlignment="Center"
                Content="Your Inventory"/>
-        <Label Grid.Row="1" Grid.Column="1"
+        <Label Grid.Row="1" Grid.Column="1" FontSize="15" Foreground="DarkBlue" FontFamily="Elephant"
                HorizontalAlignment="Center"
                Content="Trader's Inventory"/>
-
+       
         <DataGrid Grid.Row="2" Grid.Column="0"
                   Margin="10"
                   ItemsSource="{Binding CurrentPlayer.GroupedInventory}"
                   AutoGenerateColumns="False"
-                  HeadersVisibility="Column" FontSize="11" Foreground="Red" FontFamily="Elephant"
+                  HeadersVisibility="Column" FontSize="15" Foreground="DarkRed" FontFamily="Elephant"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
                   VerticalScrollBarVisibility="Auto">
@@ -59,7 +60,7 @@
                 <DataGridTemplateColumn MinWidth="75">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Click="OnClick_Sell"
+                            <Button Click="OnClick_Sell" Background="DarkBlue"
                                     Width="55"
                                     Content="Sell 1"/>
                         </DataTemplate>
@@ -71,7 +72,7 @@
                   Margin="10"
                   ItemsSource="{Binding CurrentTrader.GroupedInventory}"
                   AutoGenerateColumns="False"
-                  HeadersVisibility="Column"
+                  HeadersVisibility="Column"  FontSize="14" Foreground="DarkRed" FontFamily="Elephant"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
                   VerticalScrollBarVisibility="Auto">
@@ -92,7 +93,7 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Click="OnClick_Buy"
-                                    Width="55"
+                                    Width="55" Background="MediumAquamarine"
                                     Content="Buy 1"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -100,9 +101,9 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Grid.Row="3" Grid.Column="1"
-                HorizontalAlignment="Right"
+                HorizontalAlignment="Right" FontSize="14" Foreground="BlueViolet" FontFamily="Elephant"
                 Width="75"
-                Content="Close"
+                Content="Close"  
                 Click="OnClick_Close"/>
     </Grid>
 </Window>
