@@ -180,11 +180,15 @@
               >
             <Label BorderBrush="DarkRed" BorderThickness="4" Grid.Column="0" Grid.Row="2"/>
             <Image Source="/Background/demonloverface.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"   Opacity="0.3" Canvas.ZIndex="0"/>
-            <TabControl SelectionChanged="TabControl_SelectionChanged">
+            <TabControl SelectionChanged="TabControl_SelectionChanged" Background="Blue"  Foreground="Red">
+                
                 <TabItem Header="Inventory" >
+                    <TabItem.Background>
+                        <SolidColorBrush Color="DarkBlue" Opacity="0.8"/>
+                    </TabItem.Background>
                     <DataGrid ItemsSource="{Binding CurrentPlayer.GroupedInventory}"
                               AutoGenerateColumns="False"  
-                              HeadersVisibility="Column"
+                              HeadersVisibility="Column" Foreground="DarkRed"
                                >
                         <DataGrid.Resources>
                             <Style TargetType="DataGridCell" BasedOn="{StaticResource {x:Type DataGridCell}}">
@@ -194,10 +198,20 @@
                         </DataGrid.Resources>
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Description"
-                                                Binding="{Binding Item.Name}"
-                                                Width="*"/>
+                                                Binding="{Binding Item.Name}" 
+                                                Width="*"         
+                                                Foreground="DarkRed"
+                                                
+                                                
+                                                >
+                                <DataGridTextColumn.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ItemName_PreviewMouseLeftButtonDown"/>
+                                    </Style>
+                                </DataGridTextColumn.CellStyle>
+                            </DataGridTextColumn>
                             <DataGridTextColumn Header="Qty"
-                                                IsReadOnly="True"
+                                                IsReadOnly="True" Foreground="DarkRed"
                                                 Width="Auto"
                                                 Binding="{Binding Quantity}"/>
                             <DataGridTextColumn Header="Price"
@@ -208,9 +222,19 @@
                     </DataGrid>
                 </TabItem>
                 <TabItem Header="Quests">
+                    <TabItem.Background>
+                        <SolidColorBrush Color="DarkBlue" Opacity="0.8" />
+
+                    </TabItem.Background>
                     <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
                               AutoGenerateColumns="False"
-                              HeadersVisibility="Column">
+                              HeadersVisibility="Column"  Foreground="DarkBlue" FontSize="11">
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource {x:Type DataGridCell}}">
+                                <Setter Property="Background" Value="IndianRed"/>
+                                <!-- Set background color for cells in Description column -->
+                            </Style>
+                        </DataGrid.Resources>
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Name" 
                                                 Binding="{Binding PlayerQuest.Name}"
@@ -290,7 +314,7 @@
               ItemsSource="{Binding CurrentPlayer.Weapons}"
               SelectedItem="{Binding CurrentPlayer.CurrentWeapon}"
               DisplayMemberPath="Name" SelectionChanged="WeaponComboBox_SelectionChanged"/>
-                <Button Grid.Row="0" Grid.Column="2"  Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DarkBlue" BorderThickness="3"
+                <Button Grid.Row="0" Grid.Column="2"  Foreground="DarkBlue" FontFamily="Elephant" Background="DarkViolet" BorderBrush="DarkBlue" BorderThickness="3"
             Visibility="{Binding HasMonster, Converter={StaticResource BooleanToVisibility}}"
             Content="Use"
             Click="OnClick_AttackMonster"/>
@@ -299,7 +323,7 @@
               ItemsSource="{Binding CurrentPlayer.Consumables}"
               SelectedItem="{Binding CurrentPlayer.CurrentConsumable}"  
               DisplayMemberPath="Name" SelectionChanged="ConsumableComboBox_SelectionChanged"/>
-                <Button Grid.Row="1" Grid.Column="2"  Foreground="DarkBlue" FontFamily="Elephant" Background="Orange" BorderBrush="DarkBlue" BorderThickness="3"
+                <Button Grid.Row="1" Grid.Column="2"  Foreground="DarkBlue" FontFamily="Elephant" Background="Salmon" BorderBrush="DarkBlue" BorderThickness="3"
             Visibility="{Binding CurrentPlayer.HasConsumable, Converter={StaticResource BooleanToVisibility}}"
             Content="Use"
             Click="OnClick_UseCurrentConsumable"/>
@@ -335,8 +359,8 @@
            
 
             <!-- Image control to display selected item's image -->
-          
-            <Grid >
+
+                <Grid  x:Name="SelectedImageGrid" >
                     <Label  BorderBrush="DarkRed" BorderThickness="4"/>
 
                     <Image Source="Background/heat.jpg" Opacity="0.3"  Canvas.ZIndex="0" />
@@ -348,7 +372,7 @@
                     <Image x:Name="SelectedItemImage" Grid.Row="0" Grid.Column="0" 
            HorizontalAlignment="Center" VerticalAlignment="Center"  
  
-           Stretch="Uniform" />
+           Stretch="Fill" />
                 </Grid>
 
        

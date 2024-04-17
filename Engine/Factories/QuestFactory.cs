@@ -20,7 +20,7 @@ namespace Engine.Factories
             //2 
             itemsToComplete1.Add(new ItemQuantity(9005, 3));//bear
             rewardItems1.Add(new ItemQuantity(1004, 1));
-            itemsTOcOMPLETE2.Add(new ItemQuantity(1502, 2));
+            itemsTOcOMPLETE2.Add(new ItemQuantity(9004, 2));
             REWARDITEMS2.Add(new ItemQuantity(1002, 1));
             //itemsToComplete.Add(new ItemQuantity(1503, 6));
             //rewardItems.Add(new ItemQuantity(102, 1));
@@ -28,21 +28,21 @@ namespace Engine.Factories
             _quests.Add(new Quest(1,
                                   "Essence of the Centipede",
                                   "Quest to collect 2 Centipede essence  located in the Grassy Land",
-                                  itemsToComplete1,
+                                  itemsTOcOMPLETE2,
                                   40, 100,
-                                  rewardItems1));
+                                  REWARDITEMS2));
             _quests.Add(new Quest(2,
                              "Eyes of the Grasslands",
                              "Quest to collect 6 Centipede eyes  located in the Grassy Land",
-                             itemsToComplete,
+                              itemsToComplete,
                               45, 500,
-                             rewardItems));
+                        rewardItems));
             _quests.Add(new Quest(3,
                              "Bear Claw",
                              "Quest to collect 3 Bear claws located in DawnWood Forest",
-                             itemsTOcOMPLETE2,
+                             itemsToComplete1,
                               199, 8000,
-                             REWARDITEMS2));
+                              rewardItems1));
 
             /* itemsToComplete.Add(new ItemQuantity(204, 3));
             rewardItems.Add(new ItemQuantity(104, 1));

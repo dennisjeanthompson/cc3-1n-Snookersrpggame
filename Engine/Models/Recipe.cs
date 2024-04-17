@@ -5,7 +5,7 @@ namespace Engine.Models
     public class Recipe
     {
         public int ID { get; }
-        public string Name { get; }
+        public string Name { get; set; }
         public List<ItemQuantity> Ingredients { get; } = new List<ItemQuantity>();
         public List<ItemQuantity> OutputItems { get; } = new List<ItemQuantity>();
         public Recipe(int id, string name)

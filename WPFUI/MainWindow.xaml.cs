@@ -8,6 +8,7 @@ using Engine.EventArgs;
 using Engine.Models;
 using Engine.ViewModels;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace WPFUI
 {
@@ -116,6 +117,25 @@ namespace WPFUI
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+        private void ItemName_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // Handle the mouse click event here
+            var cell = sender as DataGridCell;
+            if (cell != null && cell.Content is TextBlock textBlock && textBlock.DataContext is GameItem
+                selectedItem)
+            {
+                // Assuming YourItemType has a property named ImagePath
+                if (!string.IsNullOrEmpty(selectedItem.ImagePath))
+                {
+                    SelectedItemImage.Source = new BitmapImage(new Uri(selectedItem.ImagePath));
+                }
+                else
+                {
+                    // If no image path is available, you can set a default image or do nothing
+                    SelectedItemImage.Source = null;
+                }
+            }
         }
     }
 }
