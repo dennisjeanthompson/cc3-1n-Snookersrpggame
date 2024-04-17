@@ -32,8 +32,8 @@
         <Image Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="1"  Source="/Background/salt.jpg"  Stretch="Fill"  Opacity=".9" />
         <Image Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="1"  Source="/sat.jpg" Opacity="0.8" Stretch="Fill" />
         <!-- Player stats -->
-        <Label Grid.Row="1" Grid.Column="0" Background="DarkKhaki"   BorderBrush="DarkRed" BorderThickness="4"  />
-        <Image Stretch="Fill" Source="/Background/skulz.jpg"  Opacity="0.5" Grid.Row="1" Grid.Column="0"   />
+        <Label Grid.Row="1" Grid.Column="0"  Background="DarkKhaki"  BorderBrush="DarkRed" BorderThickness="4"  />
+        <Image Stretch="Fill" Source="/Background/skulz.jpg"  Opacity="0.5" Grid.Column="0" Grid.Row="1" />
         <Grid Grid.Row="1" Grid.Column="0"  Margin="0,0,0,300">
 
             <Grid.RowDefinitions>
@@ -345,7 +345,8 @@
 
 
                     <Image x:Name="SelectedItemImage" Grid.Row="0" Grid.Column="0" 
-           HorizontalAlignment="Center" VerticalAlignment="Center"
+           HorizontalAlignment="Center" VerticalAlignment="Center"  
+ 
            Stretch="Uniform" />
                 </Grid>
 
