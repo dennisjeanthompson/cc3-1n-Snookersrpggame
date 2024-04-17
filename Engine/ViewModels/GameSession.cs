@@ -98,7 +98,7 @@ namespace Engine.ViewModels
         #endregion
         public GameSession()
         {
-            CurrentPlayer = new Player("Avenger", "BladeKiller", 0, 54545450, 544440, 10000);
+            CurrentPlayer = new Player("Avenger", "BladeKiller", 0, 54545450, 544440, 99999999);
             if (!CurrentPlayer.Weapons.Any())
             {
                 CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(1001));
@@ -108,6 +108,7 @@ namespace Engine.ViewModels
             CurrentPlayer.LearnRecipe(RecipeFactory.RecipeByID(2));
             CurrentPlayer.LearnRecipe(RecipeFactory.RecipeByID(3));
             CurrentPlayer.LearnRecipe(RecipeFactory.RecipeByID(4));
+            CurrentPlayer.LearnRecipe(RecipeFactory.RecipeByID(5));
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(3001));
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(3002));
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(3003));

@@ -18,12 +18,13 @@ namespace Engine.Factories
             BuildWeapon(1502, "Centepede Essence", "/Background/CentepedeEssence.jpg", 901, 2, 4);
             BuildWeapon(1503, "Centepede Eye", "/Background/EYEcentepede.jpg", 50, 3, 10);
             //  BuildWeapon(1504, "Blood of Satan", "/Background/bottleblood.jpg", 50, 0, 0);//
-
+              
             //Elixir of Resilience
             BuildHealingItem(2001, "Satanic Potion", "/Background/Potionz.png", 510, 29);
             BuildHealingItem(2002, "Blood of Satan", "/Background/bottleblood.jpg", 1000, 50);
             BuildHealingItem(2003, "Centepede Juice", "/CharacterImage/greenpotion.png", 390, 10);
-
+            BuildHealingItem(2004, "Summon Satan", "/BackGround/kingDemon.jpg", 9999, 9999);
+            //king demon
 
 
 
@@ -38,8 +39,21 @@ namespace Engine.Factories
 
 
 
+            BuildMiscellaneousItem(3001, "Blood of Satan", "/Background/bottleblood.jpg", 31);
+            BuildMiscellaneousItem(3002, "Honey", "", 23);
+            BuildMiscellaneousItem(3003, "Raisins", "", 25);
 
+            BuildMiscellaneousItem(3004, "Rat feet", "", 5000);
+            BuildMiscellaneousItem(3005, "Rat skin", "", 1000);
+            BuildMiscellaneousItem(3006, "Rat feces", "", 999);
 
+            BuildMiscellaneousItem(3010, "Satan Body", "", 1200);
+            BuildMiscellaneousItem(3011, "Satan Legs", "", 1000);
+            BuildMiscellaneousItem(3012, "Satan Heart", "", 1900);
+
+            BuildMiscellaneousItem(3013, "Satan Feet", "", 500);
+            BuildMiscellaneousItem(3014, "Satan Genetelia", "", 2090);
+            BuildMiscellaneousItem(3015, "Satan Arms", "",400 );
 
 
 
@@ -59,8 +73,11 @@ namespace Engine.Factories
 
         }
 
-        /*
-         * 
+        /*//Satan Genetelia
+         *   wep.AddIngredient(3007, 1);//Satan Body
+            wep.AddIngredient(9004, 2);//Satan Legs
+            wep.AddIngredient(3009, 1);//Satan Heart
+            wep.AddOutputItem(1005, 1);//Satan Feet
          * d  asdaw          
          * _standardGameItems.Add(new Weapon(100, "Red Sword", 9000, "/Background/RedSwordzx.png", 1, 3));
             _standardGameItems.Add(new Weapon(101, "Fire Sword", 20000, "/Background/fireezzz.png", 1, 3));

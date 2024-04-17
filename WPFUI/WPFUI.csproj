@@ -252,5 +252,8 @@
   <ItemGroup>
     <Resource Include="CharacterImage\VioletPotion.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\kingDemon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

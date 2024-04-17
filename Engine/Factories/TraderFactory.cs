@@ -34,6 +34,25 @@ namespace Engine.Factories
             peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3009));
             peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(9003));
             peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(9004));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1501));
+
+
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3010));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3011));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3012));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3013));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3014));
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(3015));
+
+
+
+
+
+
+
+
+            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(9001));
+           peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1503));
             // peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1002));
             //peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1004));
             AddTraderToList(susan);
