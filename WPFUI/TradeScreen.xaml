@@ -26,7 +26,7 @@
 
         <Label Grid.Row="0" Grid.Column="0"
                Grid.ColumnSpan="2"
-               HorizontalAlignment="Center" FontSize="11" Foreground="OrangeRed" FontFamily="Elephant"
+               HorizontalAlignment="Center" FontSize="14" Foreground="OrangeRed" FontFamily="Elephant"
                Content="{Binding CurrentTrader.Name}"/>
 
         <Label Grid.Row="1" Grid.Column="0" FontSize="14" Foreground="DarkGoldenrod" FontFamily="Elephant"
