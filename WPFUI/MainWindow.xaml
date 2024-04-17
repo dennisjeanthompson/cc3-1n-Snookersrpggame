@@ -174,8 +174,8 @@
             </Border>
         </Grid>
         <!-- Inventory and Quests -->
-     
-        <Grid Grid.Row="2" Grid.Column="0"
+
+        <Grid Grid.Row="2" Grid.Column="0"  Canvas.ZIndex="1" Opacity="0.8"
               >
             <Label BorderBrush="DarkRed" BorderThickness="4" Grid.Column="0" Grid.Row="2"/>
             <Image Source="/Background/demonloverface.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"   Opacity="0.3" Canvas.ZIndex="0"/>
@@ -185,7 +185,12 @@
                               AutoGenerateColumns="False"  
                               HeadersVisibility="Column"
                                >
-                       
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource {x:Type DataGridCell}}">
+                                <Setter Property="Background" Value="Yellow"/>
+                                <!-- Set background color for cells in Description column -->
+                            </Style>
+                        </DataGrid.Resources>
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Description"
                                                 Binding="{Binding Item.Name}"
@@ -237,7 +242,8 @@
                 </TabItem>
             </TabControl>
         </Grid>
-
+        <Image Source="/Background/hellzzx.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"  Canvas.ZIndex="0" />
+        <Image Source="/Background/demonloverface.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"   Opacity="0.5"/>
         <!-- Action controls -->
 
         <Grid Grid.Row="2" Grid.Column="1">
