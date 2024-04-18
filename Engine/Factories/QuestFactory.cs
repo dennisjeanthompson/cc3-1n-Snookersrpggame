@@ -29,13 +29,13 @@ namespace Engine.Factories
                                   "Essence of the Centipede",
                                   "Quest to collect 2 Centipede essence  located in the Grassy Land",
                                   itemsTOcOMPLETE2,
-                                  40, 100,
+                                  40, 1000,
                                   REWARDITEMS2));
             _quests.Add(new Quest(2,
                              "Eyes of the Grasslands",
                              "Quest to collect 6 Centipede eyes  located in the Grassy Land",
                               itemsToComplete,
-                              45, 500,
+                              45, 9900,
                         rewardItems));
             _quests.Add(new Quest(3,
                              "Bear Claw",

@@ -98,7 +98,7 @@ namespace Engine.ViewModels
         #endregion
         public GameSession()
         {
-            CurrentPlayer = new Player("Avenger", "BladeKiller", 0, 54545450, 544440, 99999999);
+            CurrentPlayer = new Player("Avenger", "BladeKiller", 0, 200, 200,2000);
             if (!CurrentPlayer.Weapons.Any())
             {
                 CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(1001));
