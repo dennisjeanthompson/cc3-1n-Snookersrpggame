@@ -15,7 +15,7 @@ namespace Engine.Models
         }
 
         public string ImagePath { get; set; }
-        public ItemCategory Category { get; set; } // Add setter for Category
+        public ItemCategory Category { get; set; } 
         public int ItemTypeID { get; }
         public string Name { get; set; }
         public int Price { get; set; }
@@ -26,7 +26,7 @@ namespace Engine.Models
                         bool isUnique = false, IAction action = null)
         {
             ImagePath = imagePath;
-            Category = category; // Initialize Category in the constructor
+            Category = category; 
             ItemTypeID = itemTypeID;
             Name = name;
             Price = price;
@@ -36,19 +36,18 @@ namespace Engine.Models
 
         public void PerformAction(LivingEntity actor, LivingEntity target)
         {
-            // Get the current time
+            
             DateTime currentTime = DateTime.Now;
 
-            // Calculate the time elapsed since the last click
             TimeSpan elapsedTime = currentTime - _lastClickTime;
 
-            // Check if the elapsed time is below the threshold
+            
             if (elapsedTime >= _clickThreshold)
             {
-                // Update the last click time only if enough time has passed since the last click
+               
                 _lastClickTime = currentTime;
 
-                // Execute the action
+                
                 Action?.Execute(actor, target);
             }
         }
@@ -58,7 +57,7 @@ namespace Engine.Models
             return new GameItem(Category, ItemTypeID, Name, ImagePath, Price, IsUnique, Action);
         }
 
-        // Other methods...
+       
     }
 
 }
