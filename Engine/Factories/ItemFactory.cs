@@ -16,8 +16,8 @@ namespace Engine.Factories
             BuildWeapon(1005, "Blue Sword", "/Background/glowing_sword_only__3045701784.png", 60, 10, 30);
 
             BuildWeapon(1006, "Chain Sword", "/CharacterImage/ChainSwrd.jpg", 4669, 14, 39);
-            BuildWeapon(1007, "Amino Sword", "/CharacterImage/AminoSword.jpg", 6000, 16, 42);
-            BuildWeapon(1008, "Albino Sword", "/CharacterImage/GreensW.jpg", 6091, 18, 40);
+            BuildWeapon(1007, "Amino Sword", "/CharacterImage/AminoSword.jpg", 6000, 30, 52);
+            BuildWeapon(1008, "Albino Sword", "/CharacterImage/GreensW.jpg", 6091, 28, 46);
 
             BuildWeapon(1501, "Bear claw", "/Background/BeareClawz.png", 9999, 80, 100);
             BuildWeapon(1502, "Centepede Essence", "/Background/CentepedeEssence.jpg", 901, 2, 4);
