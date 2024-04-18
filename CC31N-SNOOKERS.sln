@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.34526.175
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "WPFUI\WPFUI.csproj", "{62CA9798-3A67-4883-926E-F20226F59CB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{54ADFF88-CBAE-4B96-AAEF-E49A26A596CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CC31N-SNOOKERS", "Engine\CC31N-SNOOKERS.csproj", "{54ADFF88-CBAE-4B96-AAEF-E49A26A596CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEngine", "TestEngine\TestEngine.csproj", "{A3CB9C62-9E38-4904-8E2C-0EEAA3DF13BF}"
 EndProject

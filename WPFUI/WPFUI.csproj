@@ -107,9 +107,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Engine\Engine.csproj">
+    <ProjectReference Include="..\Engine\CC31N-SNOOKERS.csproj">
       <Project>{54adff88-cbae-4b96-aaef-e49a26a596ce}</Project>
-      <Name>Engine</Name>
+      <Name>CC31N-SNOOKERS</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
