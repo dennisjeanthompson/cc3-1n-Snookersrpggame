@@ -213,17 +213,17 @@
                             <DataGridTextColumn Header="Qty"
                                                 IsReadOnly="True" Foreground="DarkRed"
                                                 Width="Auto"
-                                                Binding="{Binding Quantity}"/>
+                                                Binding="{Binding Quantity}" />
                             <DataGridTextColumn Header="Price"
                                                 Binding="{Binding Item.Price}"
-                                                Width="Auto"/>
+                                                Width="Auto" Foreground="DarkRed"/>
                         </DataGrid.Columns>
                         
                     </DataGrid>
                 </TabItem>
                 <TabItem Header="Quests">
                     <TabItem.Background>
-                        <SolidColorBrush Color="DarkBlue" Opacity="0.8" />
+                        <SolidColorBrush Color="SkyBlue" Opacity="0.8" />
 
                     </TabItem.Background>
                     <DataGrid ItemsSource="{Binding CurrentPlayer.Quests}"
